@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RYSGALLY TEHNOLOGIYA</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #f9f9f9; color: #333; }
+    header { background: #004080; color: white; padding: 20px; text-align: center; position: sticky; top: 0; z-index: 1000; }
+    nav { display: flex; justify-content: center; background: #eaeaea; padding: 10px; flex-wrap: wrap; }
+    nav a, nav button { margin: 5px 10px; padding: 8px 16px; background: #004080; color: white; border: none; text-decoration: none; cursor: pointer; border-radius: 4px; }
+    nav a:hover, nav button:hover { background: #002f5f; }
+    main { padding: 40px 20px; max-width: 960px; margin: auto; background: white; }
+    h1 { margin-bottom: 10px; }
+    section { margin-bottom: 40px; }
+    .contact a { display: inline-block; margin-right: 10px; text-decoration: none; color: #004080; }
+    iframe { width: 100%; height: 300px; border: none; }
+    .lang { display: none; }
+    .visible { display: block; }
+    footer { background: #eee; text-align: center; padding: 20px; font-size: 14px; }
+    .download { margin-top: 10px; display: inline-block; padding: 10px 20px; background: #004080; color: white; text-decoration: none; border-radius: 5px; }
+    ul.project-list { padding-left: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>RYSGALLY TEHNOLOGIYA</h1>
+    <p>Integrated Engineering & Trading Solutions</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#catalog">Catalog</a>
+      <a href="#contact">Contact</a>
+      <button onclick="setLang('en')">EN</button>
+      <button onclick="setLang('tk')">TK</button>
+      <button onclick="setLang('ru')">RU</button>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <div class="lang en visible">
+        <h2>About Us</h2>
+        <p>Established in 1994, RYSGALLY TEHNOLOGIYA is a Turkmen engineering and industrial solutions company specializing in project execution, manufacturing, and trade.</p>
+      </div>
+      <div class="lang tk">
+        <h2>Biz barada</h2>
+        <p>"RYSGALLY TEHNOLOGIYA" 1994-nji ýylda döredilen, inženerçilik, önümçilik we söwda boýunça ýöriteleşen türkmen kompaniýasy.</p>
+      </div>
+      <div class="lang ru">
+        <h2>О нас</h2>
+        <p>Основанная в 1994 году компания RYSGALLY TEHNOLOGIYA предоставляет инженерные, производственные и торговые решения в Туркменистане.</p>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="lang en visible">
+        <h2>Our Services</h2>
+        <ul>
+          <li>Water Treatment</li>
+          <li>Electrotechnics</li>
+          <li>Furniture Production</li>
+          <li>Animal Feed</li>
+          <li>Construction & EPC</li>
+          <li>Maintenance</li>
+        </ul>
+      </div>
+      <div class="lang tk">
+        <h2>Hyzmatlarymyz</h2>
+        <ul>
+          <li>Suw arassalamak</li>
+          <li>Elektrotehnika</li>
+          <li>Mebel öndürmek</li>
+          <li>Iým zawody</li>
+          <li>Gurluşyk we EPC</li>
+          <li>Hyzmatlaşyk</li>
+        </ul>
+      </div>
+      <div class="lang ru">
+        <h2>Наши услуги</h2>
+        <ul>
+          <li>Очистка воды</li>
+          <li>Электротехника</li>
+          <li>Производство мебели</li>
+          <li>Корма и агро-логистика</li>
+          <li>Строительство и EPC</li>
+          <li>Сервис и поддержка</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="lang en visible">
+        <h2>Key Projects</h2>
+        <ul class="project-list">
+          <li>Grain storage silos and transport systems (200,000 tons)</li>
+          <li>Drip irrigation over 1,200 ha with fertigation</li>
+          <li>Modular biological water treatment stations (3,000 m³/day)</li>
+          <li>Security systems for airports and seaports</li>
+          <li>Modern health houses and sport complexes</li>
+        </ul>
+      </div>
+      <div class="lang tk">
+        <h2>Esasy taslamalar</h2>
+        <ul class="project-list">
+          <li>200 000 tonlyk däne siloslary we transporter ulgamy</li>
+          <li>1 200 ga meýdanda damja suwarylýan ulgamy</li>
+          <li>Biologik suw arassalaýyş bloklary (3 000 m³/gün)</li>
+          <li>Howpsuzlyk ulgamlary (uçarman/port)</li>
+          <li>«Saglyk öýi», sport toplumlary</li>
+        </ul>
+      </div>
+      <div class="lang ru">
+        <h2>Ключевые проекты</h2>
+        <ul class="project-list">
+          <li>Хранилища зерна и транспортные системы (200 000 тонн)</li>
+          <li>Капельное орошение на 1 200 га с фертигацией</li>
+          <li>Модульные станции очистки воды (3 000 м³/сутки)</li>
+          <li>Системы безопасности аэропортов и портов</li>
+          <li>Медицинские и спортивные комплексы</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="catalog">
+      <h2>📂 Company Catalog</h2>
+      <a class="download" href="COMPANY KATALOG Rysgally Tehnologiya 6.pdf" target="_blank">Download PDF</a>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact">
+        <p>Tel: <a href="tel:+99365145500">+993 65 14 55 00</a></p>
+        <p>WhatsApp / Telegram: <a href="https://wa.me/99365194455" target="_blank">+993 65 19 44 55</a></p>
+        <p>Email: <a href="mailto:info@rysgallytech.com">info@rysgallytech.com</a></p>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.046931777059!2d58.36079207634644!3d37.98227330645139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f6fff259792e3eb%3A0x3ec84e41d1dbbbd4!2sRysgally%20Tehnologiya!5e0!3m2!1sru!2s!4v1718960000000!5m2!1sru!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 RYSGALLY TEHNOLOGIYA. All rights reserved.
+  </footer>
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('.lang').forEach(el => el.classList.remove('visible'));
+      document.querySelectorAll(`.lang.${lang}`).forEach(el => el.classList.add('visible'));
+    }
+  </script>
+</body>
+</html>
