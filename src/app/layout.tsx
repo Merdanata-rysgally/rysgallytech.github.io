@@ -1,8 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter, Outfit } from 'next/font/google';
 import './globals.css';
-import { ThemeProvider } from '@/components/ThemeProvider';
-import { ThemeToggle } from '@/components/ThemeToggle';
 import { CursorProvider } from '@/components/CursorContext';
 import { MagneticCursor } from '@/components/MagneticCursor';
 
@@ -29,15 +27,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning>
+    <html className="dark">
       <body className={`${inter.variable} ${outfit.variable} font-sans antialiased`}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
-          <CursorProvider>
-            <MagneticCursor />
-            <ThemeToggle />
-            {children}
-          </CursorProvider>
-        </ThemeProvider>
+        <CursorProvider>
+          <MagneticCursor />
+          {children}
+        </CursorProvider>
       </body>
     </html>
   );

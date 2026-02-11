@@ -1,4 +1,9 @@
 {
+  "nav": {
+    "main": "Main",
+    "business": "Business",
+    "contact": "Contact"
+  },
   "hero": {
     "title": {
       "integrated": "INTEGRATED",
@@ -18,6 +23,30 @@
     "years": "Years of Experience",
     "industries": "Industries Served",
     "retention": "Client Retention"
+  },
+  "intro": {
+    "body": "Rysgally Tech is a corporation, encompassing construction, water filtration, furniture manufacturing, animal feed production, equipment rental, maintenance services, auto parts, and e-commerce, collectively working together to deliver a comprehensive range of services.",
+    "keywords": [
+      "construction",
+      "water filtration",
+      "furniture manufacturing",
+      "animal feed production",
+      "equipment rental",
+      "maintenance services",
+      "auto parts",
+      "e-commerce"
+    ]
+  },
+  "footer": {
+    "tagline": "Engineering • Manufacturing • Trade",
+    "copyright": "All rights reserved.",
+    "links": {
+      "main": "Main",
+      "corporate": "Corporate",
+      "business": "Business",
+      "newsroom": "Newsroom",
+      "contact": "Contact"
+    }
   },
   "industries": {
     "epc": {

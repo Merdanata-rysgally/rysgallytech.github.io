@@ -16,9 +16,9 @@ export function MagneticCursor() {
   const rawX = useMotionValue(-200);
   const rawY = useMotionValue(-200);
 
-  // Spring-smoothed position
-  const springX = useSpring(rawX, { stiffness: 180, damping: 18 });
-  const springY = useSpring(rawY, { stiffness: 180, damping: 18 });
+// Spring-smoothed position (slightly quicker response)
+const springX = useSpring(rawX, { stiffness: 260, damping: 16 });
+const springY = useSpring(rawY, { stiffness: 260, damping: 16 });
 
   useEffect(() => {
     setMounted(true);
@@ -61,7 +61,11 @@ export function MagneticCursor() {
           y: springY,
           translateX: '-50%',
           translateY: '-50%',
-          backgroundColor: color,
+          backgroundColor: 'rgba(255,255,255,0.08)',
+          border: `1px solid ${color}55`,
+          boxShadow: `0 10px 35px -12px ${color}55, inset 0 0 0 1px rgba(255,255,255,0.18)`,
+          backdropFilter: 'blur(8px)',
+          WebkitBackdropFilter: 'blur(8px)',
           mixBlendMode: 'normal',
         }}
         animate={{
@@ -70,8 +74,8 @@ export function MagneticCursor() {
           opacity: 1,
         }}
         transition={{
-          width:  { type: 'spring', stiffness: 300, damping: 25 },
-          height: { type: 'spring', stiffness: 300, damping: 25 },
+          width:  { type: 'spring', stiffness: 320, damping: 22 },
+          height: { type: 'spring', stiffness: 320, damping: 22 },
         }}
       >
         <motion.span

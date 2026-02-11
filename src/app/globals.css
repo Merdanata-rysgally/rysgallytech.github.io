@@ -3,14 +3,6 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #0a0a0a;
-  --surface: #f4f4f5;
-  --border: rgba(0,0,0,0.08);
-  --muted: rgba(0,0,0,0.45);
-}
-
-.dark {
   --background: #000000;
   --foreground: #ffffff;
   --surface: #0f0f0f;
@@ -49,6 +41,11 @@
 @keyframes marqueeReverse {
   0%   { transform: translateX(-25%); }
   100% { transform: translateX(0); }
+}
+
+@keyframes ticker {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 /* Custom scrollbar */

@@ -1,15 +1,15 @@
 'use client';
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { motion, useSpring } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import { useTheme } from 'next-themes';
 import { BentoCard } from './BentoCard';
 import { INDUSTRIES } from '@/lib/constants';
 
 export const HeroSection: React.FC = () => {
   const t = useTranslations('hero');
-  const { resolvedTheme } = useTheme();
+
+  const overlayColor = 'rgba(0, 0, 0, 0.75)';
 
   // Spotlight — snaps to hovered card
   const gridRef = useRef<HTMLDivElement>(null);
@@ -38,13 +38,9 @@ export const HeroSection: React.FC = () => {
     spH.set(cardRect.height);
   };
 
-  const [overlayColor, setOverlayColor] = useState('rgba(0, 0, 0, 0.75)');
-  useEffect(() => {
-    setOverlayColor(resolvedTheme === 'light' ? 'rgba(255, 255, 255, 0.65)' : 'rgba(0, 0, 0, 0.75)');
-  }, [resolvedTheme]);
 
   return (
-    <section className="h-screen bg-background overflow-hidden flex items-stretch">
+    <section className="h-[92vh] bg-background overflow-hidden flex items-stretch">
 
       {/* Subtle noise grain */ }
       <div
@@ -57,18 +53,7 @@ export const HeroSection: React.FC = () => {
       />
 
       {/* ── LEFT PANEL ── */ }
-      <div className="relative z-20 flex flex-col justify-center w-[44%] min-w-[340px] px-12 py-12 border-r border-black/[0.06] dark:border-white/[0.06] flex-shrink-0">
-
-        {/* Logo mark */ }
-        <motion.div
-          initial={ { opacity: 0, y: -10 } }
-          animate={ { opacity: 1, y: 0 } }
-          transition={ { duration: 0.6 } }
-          className="flex items-center gap-2 mb-14"
-        >
-          <div className="w-8 h-8 rounded-lg" style={ { background: 'linear-gradient(135deg, #3fbad2, #1a8fa6)' } } />
-          <span className="text-foreground/60 text-sm font-medium tracking-widest uppercase">Rysgally Tech</span>
-        </motion.div>
+      <div className="relative z-20 flex flex-col justify-center w-[44%] min-w-[340px] px-12 pt-24 pb-12 border-r border-white/[0.06] flex-shrink-0">
 
         {/* Headline */ }
         <motion.h1
@@ -92,9 +77,8 @@ export const HeroSection: React.FC = () => {
           >
             { t('title.engineering') }
           </span>
-          <span className="block text-foreground/25">{ t('title.and') }</span>
+          <span className="text-foreground/25 mr-1">{ t('title.and') }</span>
           <span
-            className="block"
             style={ {
               background: 'linear-gradient(90deg, #1a8fa6 0%, #7ee8f8 50%, #1a8fa6 100%)',
               backgroundSize: '200% auto',
@@ -108,47 +92,12 @@ export const HeroSection: React.FC = () => {
           </span>
           <span className="block text-foreground">{ t('title.solutions') }</span>
         </motion.h1>
-
-        <motion.p
-          initial={ { opacity: 0, y: 20 } }
-          animate={ { opacity: 1, y: 0 } }
-          transition={ { duration: 0.8, delay: 0.25 } }
-          className="text-foreground/50 text-base leading-relaxed max-w-xs mb-10"
-        >
-          { t('subtitle') }
-        </motion.p>
-
-        <motion.div
-          initial={ { opacity: 0, y: 20 } }
-          animate={ { opacity: 1, y: 0 } }
-          transition={ { duration: 0.8, delay: 0.4 } }
-          className="flex flex-wrap gap-3"
-        >
-          <button
-            className="px-7 py-3.5 rounded-full font-bold text-white text-sm tracking-wide
-                       hover:shadow-lg hover:shadow-[#3fbad2]/30
-                       hover:scale-[1.03] transition-all duration-200 group"
-            style={ { background: 'linear-gradient(90deg, #3fbad2, #1a8fa6)' } }
-          >
-            { t('cta.primary') }
-            <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>
-          </button>
-
-          <button
-            className="px-7 py-3.5 rounded-full font-bold text-foreground/70 text-sm tracking-wide
-                       border border-black/15 dark:border-white/15 backdrop-blur-sm
-                       hover:bg-black/5 dark:hover:bg-white/10 hover:border-black/30 dark:hover:border-white/30 hover:text-foreground
-                       transition-all duration-200"
-          >
-            { t('cta.secondary') }
-          </button>
-        </motion.div>
       </div>
 
       {/* ── RIGHT PANEL — bento grid ── */ }
       <div
         ref={ gridRef }
-        className="relative flex-1 overflow-hidden p-5"
+        className="relative flex-1 overflow-hidden p-5 pt-16"
         onMouseEnter={ () => setGridActive(true) }
         onMouseLeave={ () => {
           setGridActive(false);

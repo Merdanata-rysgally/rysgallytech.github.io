@@ -1,11 +1,15 @@
 import { HeroSection } from '@/components/HeroSection';
-import { StatsSection } from '@/components/StatsSection';
+import { ServiceTicker } from '@/components/ServiceTicker';
+import { CompanyIntro } from '@/components/CompanyIntro';
+import { Footer } from '@/components/Footer';
 
 export default function HomePage() {
   return (
     <main className="min-h-screen">
       <HeroSection />
-      <StatsSection />
+      <ServiceTicker />
+      <CompanyIntro />
+      <Footer />
     </main>
   );
 }
