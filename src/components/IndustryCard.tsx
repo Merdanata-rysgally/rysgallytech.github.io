@@ -4,7 +4,6 @@ import React, { useRef, useState } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import * as LucideIcons from 'lucide-react';
 import type { Industry } from '@/lib/constants';
 
 interface IndustryCardProps {
@@ -50,9 +49,6 @@ export const IndustryCard: React.FC<IndustryCardProps> = ({ industry, index }) =
     mouseY.set(0);
     setIsHovered(false);
   };
-
-  // Get the icon component dynamically
-  const IconComponent = LucideIcons[industry.iconName as keyof typeof LucideIcons] as any;
 
   return (
     <motion.div

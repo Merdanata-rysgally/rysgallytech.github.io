@@ -1,0 +1,31 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Wrench -->
+  <rect x="35" y="65" width="12" height="40" rx="2" fill="white"/>
+  <circle cx="41" cy="57" r="10" fill="none" stroke="white" stroke-width="2.5"/>
+  <circle cx="41" cy="57" r="5" fill="none" stroke="white" stroke-width="2"/>
+  
+  <!-- Wrench handle detail -->
+  <rect x="37" y="75" width="8" height="3" fill="black" opacity="0.3"/>
+  <rect x="37" y="85" width="8" height="3" fill="black" opacity="0.3"/>
+  <rect x="37" y="95" width="8" height="3" fill="black" opacity="0.3"/>
+  
+  <!-- Gear/Cog -->
+  <circle cx="70" cy="75" r="18" fill="none" stroke="white" stroke-width="2.5"/>
+  <circle cx="70" cy="75" r="8" fill="white"/>
+  
+  <!-- Gear teeth -->
+  <rect x="68" y="55" width="4" height="6" fill="white"/>
+  <rect x="68" y="89" width="4" height="6" fill="white"/>
+  <rect x="86" y="73" width="6" height="4" fill="white"/>
+  <rect x="52" y="73" width="6" height="4" fill="white"/>
+  <rect x="81" y="62" width="5" height="5" transform="rotate(45 83.5 64.5)" fill="white"/>
+  <rect x="57" y="86" width="5" height="5" transform="rotate(45 59.5 88.5)" fill="white"/>
+  <rect x="81" y="86" width="5" height="5" transform="rotate(-45 83.5 88.5)" fill="white"/>
+  <rect x="57" y="62" width="5" height="5" transform="rotate(-45 59.5 64.5)" fill="white"/>
+  
+  <!-- 24/7 Badge -->
+  <circle cx="90" cy="35" r="20" fill="white"/>
+  <text x="90" y="32" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="black" text-anchor="middle">24</text>
+  <line x1="80" y1="35" x2="100" y2="35" stroke="black" stroke-width="1.5"/>
+  <text x="90" y="43" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="black" text-anchor="middle">7</text>
+</svg>

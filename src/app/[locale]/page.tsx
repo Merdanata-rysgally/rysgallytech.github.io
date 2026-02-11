@@ -1,10 +1,11 @@
 import { HeroSection } from '@/components/HeroSection';
+import { StatsSection } from '@/components/StatsSection';
 
 export default function HomePage() {
   return (
     <main className="min-h-screen">
       <HeroSection />
-      {/* Additional sections will go here */}
+      <StatsSection />
     </main>
   );
 }

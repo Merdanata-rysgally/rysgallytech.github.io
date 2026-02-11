@@ -14,46 +14,51 @@
     },
     "scroll": "Scroll to explore"
   },
+  "stats": {
+    "years": "Years of Experience",
+    "industries": "Industries Served",
+    "retention": "Client Retention"
+  },
   "industries": {
     "epc": {
-      "title": "EPC Turnkey Solutions",
-      "shortTitle": "EPC",
-      "description": "Complete construction and engineering projects"
+      "title": "Construction & EPC Projects",
+      "shortTitle": "Construction & EPC",
+      "description": "Complete turnkey construction and engineering projects"
     },
     "water": {
-      "title": "Water Treatment Systems",
-      "shortTitle": "Water Treatment",
-      "description": "Professional water treatment solutions"
+      "title": "Water Treatment & Filtration",
+      "shortTitle": "Water Filtration",
+      "description": "Manufacturing water filters and treatment systems"
     },
     "furniture": {
       "title": "Furniture Manufacturing",
       "shortTitle": "Furniture",
-      "description": "High-quality furniture manufacturing"
+      "description": "High-quality furniture production and design"
     },
     "feed": {
       "title": "Animal Feed Production",
       "shortTitle": "Animal Feed",
-      "description": "Animal feed manufacturing"
+      "description": "Premium livestock and poultry feed manufacturing"
+    },
+    "equipment": {
+      "title": "Agricultural Equipment Rental",
+      "shortTitle": "Equipment Rental",
+      "description": "Electrotechnical vehicles and machinery for agriculture"
     },
     "service": {
-      "title": "24/7 Service & Maintenance",
+      "title": "24/7 Maintenance & Service",
       "shortTitle": "Service 24/7",
-      "description": "Round-the-clock technical support and service"
+      "description": "Round-the-clock technical support and maintenance"
     },
     "auto": {
-      "title": "Auto Parts Retail",
+      "title": "Auto Parts & Supplies",
       "shortTitle": "Auto Parts",
-      "description": "Retail sale of automotive parts"
+      "description": "Quality automotive parts and accessories"
     },
     "retail": {
-      "title": "Trade & Retail Stores",
-      "shortTitle": "Retail",
-      "description": "Trade and retail stores"
-    },
-    "landscaping": {
-      "title": "Site Clearing & Landscaping",
-      "shortTitle": "Landscaping",
-      "description": "Site clearing and landscaping services"
+      "title": "E-Commerce Platform",
+      "shortTitle": "Online Market",
+      "description": "Digital marketplace for industrial products"
     }
   }
 }

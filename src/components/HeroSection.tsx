@@ -1,18 +1,21 @@
 'use client';
 
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { motion, useSpring } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import { useTheme } from 'next-themes';
 import { BentoCard } from './BentoCard';
-import { GlowTrail } from './GlowTrail';
 import { INDUSTRIES } from '@/lib/constants';
 
 export const HeroSection: React.FC = () => {
   const t = useTranslations('hero');
+  const { resolvedTheme } = useTheme();
 
   // Spotlight — snaps to hovered card
   const gridRef = useRef<HTMLDivElement>(null);
   const [anyHovered, setAnyHovered] = useState(false);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [gridActive, setGridActive] = useState(false);
 
   const springOpts = { stiffness: 280, damping: 30 };
   const spT = useSpring(0, springOpts);
@@ -20,12 +23,14 @@ export const HeroSection: React.FC = () => {
   const spW = useSpring(100, springOpts);
   const spH = useSpring(100, springOpts);
 
-  const handleCardHover = (cardRect: DOMRect | null) => {
+  const handleCardHover = (cardRect: DOMRect | null, idx: number | null) => {
     if (!cardRect || !gridRef.current) {
       setAnyHovered(false);
+      setHoveredIndex(null);
       return;
     }
     setAnyHovered(true);
+    setHoveredIndex(idx);
     const grid = gridRef.current.getBoundingClientRect();
     spT.set(cardRect.top - grid.top);
     spL.set(cardRect.left - grid.left);
@@ -33,94 +38,99 @@ export const HeroSection: React.FC = () => {
     spH.set(cardRect.height);
   };
 
+  const [overlayColor, setOverlayColor] = useState('rgba(0, 0, 0, 0.75)');
+  useEffect(() => {
+    setOverlayColor(resolvedTheme === 'light' ? 'rgba(255, 255, 255, 0.65)' : 'rgba(0, 0, 0, 0.75)');
+  }, [resolvedTheme]);
+
   return (
     <section className="h-screen bg-background overflow-hidden flex items-stretch">
 
-      {/* Subtle noise grain */}
+      {/* Subtle noise grain */ }
       <div
         className="absolute inset-0 pointer-events-none opacity-[0.03] z-10"
-        style={{
+        style={ {
           backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
           backgroundRepeat: 'repeat',
           backgroundSize: '128px 128px',
-        }}
+        } }
       />
 
-      {/* ── LEFT PANEL ── */}
+      {/* ── LEFT PANEL ── */ }
       <div className="relative z-20 flex flex-col justify-center w-[44%] min-w-[340px] px-12 py-12 border-r border-black/[0.06] dark:border-white/[0.06] flex-shrink-0">
 
-        {/* Logo mark */}
+        {/* Logo mark */ }
         <motion.div
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          initial={ { opacity: 0, y: -10 } }
+          animate={ { opacity: 1, y: 0 } }
+          transition={ { duration: 0.6 } }
           className="flex items-center gap-2 mb-14"
         >
-          <div className="w-8 h-8 rounded-lg" style={{ background: 'linear-gradient(135deg, #3fbad2, #1a8fa6)' }} />
+          <div className="w-8 h-8 rounded-lg" style={ { background: 'linear-gradient(135deg, #3fbad2, #1a8fa6)' } } />
           <span className="text-foreground/60 text-sm font-medium tracking-widest uppercase">Rysgally Tech</span>
         </motion.div>
 
-        {/* Headline */}
+        {/* Headline */ }
         <motion.h1
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+          initial={ { opacity: 0, y: 40 } }
+          animate={ { opacity: 1, y: 0 } }
+          transition={ { duration: 0.9, ease: [0.16, 1, 0.3, 1] } }
           className="font-black leading-[0.9] tracking-tighter mb-8"
-          style={{ fontSize: 'clamp(3.2rem, 5.5vw, 6.5rem)' }}
+          style={ { fontSize: 'clamp(3.2rem, 5.5vw, 6.5rem)' } }
         >
-          <span className="block text-foreground">{t('title.integrated')}</span>
+          <span className="block text-foreground">{ t('title.integrated') }</span>
           <span
             className="block"
-            style={{
+            style={ {
               background: 'linear-gradient(90deg, #3fbad2 0%, #7ee8f8 50%, #3fbad2 100%)',
               backgroundSize: '200% auto',
               WebkitBackgroundClip: 'text',
               backgroundClip: 'text',
               color: 'transparent',
               animation: 'gradientShift 4s linear infinite',
-            }}
+            } }
           >
-            {t('title.engineering')}
+            { t('title.engineering') }
           </span>
-          <span className="block text-foreground/25">{t('title.and')}</span>
+          <span className="block text-foreground/25">{ t('title.and') }</span>
           <span
             className="block"
-            style={{
+            style={ {
               background: 'linear-gradient(90deg, #1a8fa6 0%, #7ee8f8 50%, #1a8fa6 100%)',
               backgroundSize: '200% auto',
               WebkitBackgroundClip: 'text',
               backgroundClip: 'text',
               color: 'transparent',
               animation: 'gradientShift 4s linear infinite reverse',
-            }}
+            } }
           >
-            {t('title.trading')}
+            { t('title.trading') }
           </span>
-          <span className="block text-foreground">{t('title.solutions')}</span>
+          <span className="block text-foreground">{ t('title.solutions') }</span>
         </motion.h1>
 
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.25 }}
+          initial={ { opacity: 0, y: 20 } }
+          animate={ { opacity: 1, y: 0 } }
+          transition={ { duration: 0.8, delay: 0.25 } }
           className="text-foreground/50 text-base leading-relaxed max-w-xs mb-10"
         >
-          {t('subtitle')}
+          { t('subtitle') }
         </motion.p>
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
+          initial={ { opacity: 0, y: 20 } }
+          animate={ { opacity: 1, y: 0 } }
+          transition={ { duration: 0.8, delay: 0.4 } }
           className="flex flex-wrap gap-3"
         >
           <button
             className="px-7 py-3.5 rounded-full font-bold text-white text-sm tracking-wide
                        hover:shadow-lg hover:shadow-[#3fbad2]/30
                        hover:scale-[1.03] transition-all duration-200 group"
-            style={{ background: 'linear-gradient(90deg, #3fbad2, #1a8fa6)' }}
+            style={ { background: 'linear-gradient(90deg, #3fbad2, #1a8fa6)' } }
           >
-            {t('cta.primary')}
+            { t('cta.primary') }
             <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>
           </button>
 
@@ -130,51 +140,68 @@ export const HeroSection: React.FC = () => {
                        hover:bg-black/5 dark:hover:bg-white/10 hover:border-black/30 dark:hover:border-white/30 hover:text-foreground
                        transition-all duration-200"
           >
-            {t('cta.secondary')}
+            { t('cta.secondary') }
           </button>
         </motion.div>
       </div>
 
-      {/* ── RIGHT PANEL — bento grid ── */}
-      <div ref={gridRef} className="relative flex-1 overflow-hidden p-5">
-
-        <GlowTrail containerRef={gridRef} />
+      {/* ── RIGHT PANEL — bento grid ── */ }
+      <div
+        ref={ gridRef }
+        className="relative flex-1 overflow-hidden p-5"
+        onMouseEnter={ () => setGridActive(true) }
+        onMouseLeave={ () => {
+          setGridActive(false);
+          setAnyHovered(false);
+          setHoveredIndex(null);
+        } }
+      >
 
         <div
           className="h-full w-full"
-          style={{
+          style={ {
             display: 'grid',
             gridTemplateColumns: 'repeat(3, 1fr)',
             gridTemplateRows: 'repeat(6, 1fr)',
             gap: '10px',
-          }}
+          } }
         >
-          <BentoCard industry={INDUSTRIES[0]} index={0} style={{ gridColumn: '1', gridRow: '1 / 4' }} onCardHover={handleCardHover} />
-          <BentoCard industry={INDUSTRIES[1]} index={1} style={{ gridColumn: '2', gridRow: '1 / 3' }} onCardHover={handleCardHover} />
-          <BentoCard industry={INDUSTRIES[2]} index={2} style={{ gridColumn: '3', gridRow: '1 / 3' }} onCardHover={handleCardHover} />
-          <BentoCard industry={INDUSTRIES[3]} index={3} style={{ gridColumn: '2', gridRow: '3 / 5' }} onCardHover={handleCardHover} />
-          <BentoCard industry={INDUSTRIES[4]} index={4} style={{ gridColumn: '3', gridRow: '3 / 5' }} onCardHover={handleCardHover} />
-          <BentoCard industry={INDUSTRIES[5]} index={5} style={{ gridColumn: '1', gridRow: '4 / 7' }} onCardHover={handleCardHover} />
-          <BentoCard industry={INDUSTRIES[6]} index={6} style={{ gridColumn: '2', gridRow: '5 / 7' }} onCardHover={handleCardHover} />
-          <BentoCard industry={INDUSTRIES[7]} index={7} style={{ gridColumn: '3', gridRow: '5 / 7' }} onCardHover={handleCardHover} />
+          <BentoCard industry={ INDUSTRIES[0] } index={ 0 } style={ { gridColumn: '1', gridRow: '1 / 4' } } onCardHover={ (rect) => handleCardHover(rect, 0) } isFocused={ hoveredIndex === 0 } />
+          <BentoCard industry={ INDUSTRIES[1] } index={ 1 } style={ { gridColumn: '2', gridRow: '1 / 3' } } onCardHover={ (rect) => handleCardHover(rect, 1) } isFocused={ hoveredIndex === 1 } />
+          <BentoCard industry={ INDUSTRIES[2] } index={ 2 } style={ { gridColumn: '3', gridRow: '1 / 3' } } onCardHover={ (rect) => handleCardHover(rect, 2) } isFocused={ hoveredIndex === 2 } />
+          <BentoCard industry={ INDUSTRIES[3] } index={ 3 } style={ { gridColumn: '2', gridRow: '3 / 5' } } onCardHover={ (rect) => handleCardHover(rect, 3) } isFocused={ hoveredIndex === 3 } />
+          <BentoCard industry={ INDUSTRIES[4] } index={ 4 } style={ { gridColumn: '3', gridRow: '3 / 5' } } onCardHover={ (rect) => handleCardHover(rect, 4) } isFocused={ hoveredIndex === 4 } />
+          <BentoCard industry={ INDUSTRIES[5] } index={ 5 } style={ { gridColumn: '1', gridRow: '4 / 7' } } onCardHover={ (rect) => handleCardHover(rect, 5) } isFocused={ hoveredIndex === 5 } />
+          <BentoCard industry={ INDUSTRIES[6] } index={ 6 } style={ { gridColumn: '2', gridRow: '5 / 7' } } onCardHover={ (rect) => handleCardHover(rect, 6) } isFocused={ hoveredIndex === 6 } />
+          <BentoCard industry={ INDUSTRIES[7] } index={ 7 } style={ { gridColumn: '3', gridRow: '5 / 7' } } onCardHover={ (rect) => handleCardHover(rect, 7) } isFocused={ hoveredIndex === 7 } />
         </div>
+
+        {/* Dim-all layer when inside grid and not on a card */ }
+        <div
+          className="pointer-events-none absolute inset-0 z-10"
+          style={ {
+            opacity: gridActive && !anyHovered ? 1 : 0,
+            background: overlayColor,
+            transition: 'opacity 300ms ease-out',
+          } }
+        />
 
         {/*
           Spotlight: a transparent box that springs to the hovered card.
-          Its box-shadow uses a 2000px spread to darken everything outside.
+          Its box-shadow uses a 2000px spread to darken everything outside (no blur).
           The overlay fades in when any card is hovered.
         */}
         <motion.div
           className="absolute pointer-events-none z-20 rounded-2xl"
-          style={{
+          style={ {
             top: spT,
             left: spL,
             width: spW,
             height: spH,
-            boxShadow: '0 0 0 2000px rgba(0,0,0,0.78)',
-          }}
-          animate={{ opacity: anyHovered ? 1 : 0 }}
-          transition={{ duration: 0.25 }}
+            boxShadow: `0 0 0 2000px ${overlayColor}`,
+          } }
+          animate={ { opacity: gridActive && anyHovered ? 1 : 0 } }
+          transition={ { duration: 0.3, ease: 'easeOut' } }
         />
       </div>
 

@@ -1,0 +1,21 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Water Tank -->
+  <ellipse cx="60" cy="35" rx="28" ry="8" fill="none" stroke="white" stroke-width="2.5"/>
+  <line x1="32" y1="35" x2="32" y2="85" stroke="white" stroke-width="2.5"/>
+  <line x1="88" y1="35" x2="88" y2="85" stroke="white" stroke-width="2.5"/>
+  <ellipse cx="60" cy="85" rx="28" ry="8" fill="none" stroke="white" stroke-width="2.5"/>
+  
+  <!-- Water level inside -->
+  <ellipse cx="60" cy="55" rx="24" ry="6" fill="white" opacity="0.3"/>
+  
+  <!-- Support legs -->
+  <line x1="40" y1="85" x2="35" y2="105" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="80" y1="85" x2="85" y2="105" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <!-- Water droplet -->
+  <path d="M 100 75 Q 100 68 105 60 Q 110 68 110 75 Q 110 82 105 85 Q 100 82 100 75 Z" fill="white"/>
+  
+  <!-- Pipes -->
+  <line x1="60" y1="90" x2="60" y2="100" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <rect x="55" y="100" width="10" height="4" fill="white"/>
+</svg>

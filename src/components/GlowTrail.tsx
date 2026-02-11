@@ -1,124 +1,139 @@
-'use client';
+// 'use client';
 
-import { useEffect, useRef } from 'react';
-import { useCursor } from './CursorContext';
+// import { useEffect, useRef } from 'react';
+// import { useCursor } from './CursorContext';
 
-interface Particle {
-  x: number;
-  y: number;
-  color: string;
-  alpha: number;     // starts at 1, decays to 0
-  radius: number;
-  born: number;      // timestamp ms
-}
+// interface Particle {
+//   x: number;
+//   y: number;
+//   color: string;
+//   alpha: number;     // starts at 1, decays to 0
+//   radius: number;
+//   born: number;      // timestamp ms
+// }
 
-const LIFETIME_MS = 1000;   // fade out over 1 s
-const RADIUS      = 36;     // blob radius in px
-const SPACING     = 6;      // min px between new particles
+// const LIFETIME_MS = 1000;   // fade out over 1 s
+// const RADIUS      = 36;     // blob radius in px
+// const SPACING     = 6;      // min px between new particles
 
-export function GlowTrail({ containerRef }: { containerRef: React.RefObject<HTMLDivElement | null> }) {
-  const canvasRef   = useRef<HTMLCanvasElement>(null);
-  const particles   = useRef<Particle[]>([]);
-  const lastPos     = useRef<{ x: number; y: number } | null>(null);
-  const rafId       = useRef<number>(0);
-  const { cursor }  = useCursor();
-  const colorRef    = useRef<string>('#3fbad2');
+// export function GlowTrail({ containerRef }: { containerRef: React.RefObject<HTMLDivElement | null> }) {
+//   const canvasRef   = useRef<HTMLCanvasElement>(null);
+//   const particles   = useRef<Particle[]>([]);
+//   const lastPos     = useRef<{ x: number; y: number } | null>(null);
+//   const rafId       = useRef<number>(0);
+//   const { cursor }  = useCursor();
+//   const colorRef    = useRef<string>('#3fbad2');
 
-  // Keep color ref in sync without needing to re-register listeners
-  useEffect(() => {
-    colorRef.current = cursor.color ?? '#3fbad2';
-  }, [cursor.color]);
+//   // Keep color ref in sync without needing to re-register listeners
+//   useEffect(() => {
+//     colorRef.current = cursor.color ?? '#3fbad2';
+//   }, [cursor.color]);
 
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    const container = containerRef.current;
-    if (!canvas || !container) return;
+//   useEffect(() => {
+//     const canvas = canvasRef.current;
+//     const container = containerRef.current;
+//     if (!canvas || !container) return;
 
-    // Size canvas to container
-    const resize = () => {
-      canvas.width  = container.offsetWidth;
-      canvas.height = container.offsetHeight;
-    };
-    resize();
-    const ro = new ResizeObserver(resize);
-    ro.observe(container);
+//     const ctx = canvas.getContext('2d');
+//     if (!ctx) return;
 
-    // Mouse move — add particles
-    const onMove = (e: MouseEvent) => {
-      const rect = container.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
+//     let dpr = typeof window !== 'undefined' ? window.devicePixelRatio || 1 : 1;
 
-      // Skip if too close to last point
-      if (lastPos.current) {
-        const dx = x - lastPos.current.x;
-        const dy = y - lastPos.current.y;
-        if (dx * dx + dy * dy < SPACING * SPACING) return;
-      }
-      lastPos.current = { x, y };
+//     // Size canvas to container (hi-dpi aware)
+//     const resize = () => {
+//       if (!container) return;
+//       const { offsetWidth: w, offsetHeight: h } = container;
+//       dpr = typeof window !== 'undefined' ? window.devicePixelRatio || 1 : 1;
+//       canvas.style.width = `${w}px`;
+//       canvas.style.height = `${h}px`;
+//       canvas.width = Math.floor(w * dpr);
+//       canvas.height = Math.floor(h * dpr);
+//       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+//     };
+//     resize();
+//     const ro = new ResizeObserver(resize);
+//     ro.observe(container);
 
-      particles.current.push({
-        x, y,
-        color: colorRef.current,
-        alpha: 1,
-        radius: RADIUS,
-        born: performance.now(),
-      });
-    };
+//     // Mouse move — add particles
+//     const onMove = (e: MouseEvent) => {
+//       const rect = container.getBoundingClientRect();
+//       const x = e.clientX - rect.left;
+//       const y = e.clientY - rect.top;
 
-    container.addEventListener('mousemove', onMove);
+//       // Skip if too close to last point
+//       if (lastPos.current) {
+//         const dx = x - lastPos.current.x;
+//         const dy = y - lastPos.current.y;
+//         if (dx * dx + dy * dy < SPACING * SPACING) return;
+//       }
+//       lastPos.current = { x, y };
 
-    // rAF render loop
-    const draw = (now: number) => {
-      const ctx = canvas.getContext('2d');
-      if (!ctx) return;
+//       particles.current.push({
+//         x, y,
+//         color: colorRef.current,
+//         alpha: 1,
+//         radius: RADIUS,
+//         born: performance.now(),
+//       });
+//     };
 
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+//     const onLeave = () => {
+//       lastPos.current = null;
+//     };
 
-      // Update + draw particles
-      particles.current = particles.current.filter(p => {
-        const age = now - p.born;
-        if (age >= LIFETIME_MS) return false;
+//     container.addEventListener('mousemove', onMove, { passive: true });
+//     container.addEventListener('mouseleave', onLeave);
 
-        p.alpha = 1 - age / LIFETIME_MS;
+//     // rAF render loop
+//     const draw = (now: number) => {
+//       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+//       ctx.clearRect(0, 0, canvas.width / dpr, canvas.height / dpr);
 
-        const grad = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.radius);
-        grad.addColorStop(0,   hexToRgba(p.color, p.alpha * 0.55));
-        grad.addColorStop(0.5, hexToRgba(p.color, p.alpha * 0.18));
-        grad.addColorStop(1,   hexToRgba(p.color, 0));
+//       // Update + draw particles
+//       particles.current = particles.current.filter(p => {
+//         const age = now - p.born;
+//         if (age >= LIFETIME_MS) return false;
 
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-        ctx.fillStyle = grad;
-        ctx.fill();
+//         p.alpha = 1 - age / LIFETIME_MS;
 
-        return true;
-      });
+//         const grad = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.radius);
+//         grad.addColorStop(0,   hexToRgba(p.color, p.alpha * 0.55));
+//         grad.addColorStop(0.5, hexToRgba(p.color, p.alpha * 0.18));
+//         grad.addColorStop(1,   hexToRgba(p.color, 0));
 
-      rafId.current = requestAnimationFrame(draw);
-    };
-    rafId.current = requestAnimationFrame(draw);
+//         ctx.beginPath();
+//         ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+//         ctx.fillStyle = grad;
+//         ctx.fill();
 
-    return () => {
-      container.removeEventListener('mousemove', onMove);
-      cancelAnimationFrame(rafId.current);
-      ro.disconnect();
-    };
-  }, [containerRef]);
+//         return true;
+//       });
 
-  return (
-    <canvas
-      ref={canvasRef}
-      className="absolute inset-0 pointer-events-none z-10"
-      style={{ mixBlendMode: 'screen' }}
-    />
-  );
-}
+//       rafId.current = requestAnimationFrame(draw);
+//     };
+//     rafId.current = requestAnimationFrame(draw);
 
-// Convert #rrggbb to rgba(r,g,b,a)
-function hexToRgba(hex: string, alpha: number): string {
-  const r = parseInt(hex.slice(1, 3), 16);
-  const g = parseInt(hex.slice(3, 5), 16);
-  const b = parseInt(hex.slice(5, 7), 16);
-  return `rgba(${r},${g},${b},${alpha})`;
-}
+//     return () => {
+//       container.removeEventListener('mousemove', onMove);
+//       container.removeEventListener('mouseleave', onLeave);
+//       cancelAnimationFrame(rafId.current);
+//       ro.disconnect();
+//     };
+//   }, [containerRef]);
+
+//   return (
+//     <canvas
+//       ref={canvasRef}
+//       className="absolute inset-0 pointer-events-none z-10"
+//       style={{ mixBlendMode: 'screen' }}
+//     />
+//   );
+// }
+
+// // Convert #rrggbb to rgba(r,g,b,a)
+// function hexToRgba(hex: string, alpha: number): string {
+//   const r = parseInt(hex.slice(1, 3), 16);
+//   const g = parseInt(hex.slice(3, 5), 16);
+//   const b = parseInt(hex.slice(5, 7), 16);
+//   return `rgba(${r},${g},${b},${alpha})`;
+// }

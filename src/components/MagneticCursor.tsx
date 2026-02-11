@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { motion, useMotionValue, useSpring } from 'framer-motion';
 import { useCursor } from './CursorContext';
 
-const CURSOR_SIZE_DEFAULT = 20;
+const CURSOR_SIZE_DEFAULT = 48; // keep same as hover for consistent radius
 const CURSOR_SIZE_HOVER   = 48;
 const MAGNET_STRENGTH     = 0.35; // 0 = no pull, 1 = fully locked to center
 
@@ -62,7 +62,7 @@ export function MagneticCursor() {
           translateX: '-50%',
           translateY: '-50%',
           backgroundColor: color,
-          mixBlendMode: isHovering ? 'normal' : 'difference',
+          mixBlendMode: 'normal',
         }}
         animate={{
           width: size,

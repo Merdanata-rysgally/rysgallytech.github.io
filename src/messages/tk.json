@@ -14,46 +14,51 @@
     },
     "scroll": "Öwrenmek üçin aşak aýlaň"
   },
+  "stats": {
+    "years": "Ýyllyk Tejribe",
+    "industries": "Hyzmat Pudaklary",
+    "retention": "Müşderi Saklaýyş"
+  },
   "industries": {
     "epc": {
-      "title": "EPC Tabşyrmak",
-      "shortTitle": "EPC",
+      "title": "Gurluşyk we EPC Taslamalary",
+      "shortTitle": "Gurluşyk & EPC",
       "description": "Doly gurluşyk we inženerçilik taslamalary"
     },
     "water": {
-      "title": "Suw Arassalaýyş Ulgamlary",
-      "shortTitle": "Suw Arassalaýyş",
-      "description": "Professional suw arassalaýyş çözgütleri"
+      "title": "Suw Arassalaýyş we Filtrleme",
+      "shortTitle": "Suw Filtrleme",
+      "description": "Suw filtrleri we arassalaýyş ulgamlaryny öndürmek"
     },
     "furniture": {
       "title": "Mebel Önümçiligi",
       "shortTitle": "Mebel",
-      "description": "Ýokary hilli mebel önümçiligi"
+      "description": "Ýokary hilli mebel önümçiligi we dizaýny"
     },
     "feed": {
       "title": "Haýwan Iýmesi Öndürmek",
       "shortTitle": "Haýwan Iýmesi",
-      "description": "Haýwan iýmelerini öndürmek"
+      "description": "Premium mal we guş iýmesini öndürmek"
+    },
+    "equipment": {
+      "title": "Oba Hojalyk Tehnikasyny Kärende Bermek",
+      "shortTitle": "Tehnika Kärendesi",
+      "description": "Oba hojalygy üçin elektrotehniki ulaglar we maşynlar"
     },
     "service": {
-      "title": "24/7 Hyzmat we Tehniki Hyzmat",
+      "title": "24/7 Tehniki Hyzmat",
       "shortTitle": "Hyzmat 24/7",
       "description": "Hemişelik tehniki goldaw we hyzmat"
     },
     "auto": {
-      "title": "Awtomobil Bölekleri Söwdasy",
+      "title": "Awtomobil Ätiýaçlyk Şaýlary",
       "shortTitle": "Awto Bölek",
-      "description": "Awtomobil bölekleriniň bölek söwdasy"
+      "description": "Ýokary hilli awtomobil bölekleri we aksessuarlar"
     },
     "retail": {
-      "title": "Söwda Dükanlary",
-      "shortTitle": "Söwda",
-      "description": "Söwda we bölek satuw dükanlary"
-    },
-    "landscaping": {
-      "title": "Ýer Meýdanlaryny Arassalamak",
-      "shortTitle": "Bagy-Bossanlyk",
-      "description": "Ýer meýdanlaryny arassalamak we bagy-bossanlyk işleri"
+      "title": "Elektron Söwda Meýdançasy",
+      "shortTitle": "Onlaýn Bazar",
+      "description": "Senagat önümleri üçin sanly söwda meýdançasy"
     }
   }
 }

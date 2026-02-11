@@ -1,0 +1,25 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Construction Crane -->
+  <rect x="20" y="85" width="8" height="30" fill="white" stroke="white" stroke-width="2"/>
+  <line x1="24" y1="85" x2="24" y2="25" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <line x1="24" y1="28" x2="75" y2="28" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <line x1="75" y1="28" x2="75" y2="45" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <rect x="68" y="45" width="14" height="8" rx="2" fill="white" stroke="white" stroke-width="1"/>
+  
+  <!-- Building/Structure -->
+  <rect x="45" y="70" width="35" height="45" fill="none" stroke="white" stroke-width="2.5"/>
+  <line x1="52" y1="70" x2="52" y2="115" stroke="white" stroke-width="1.5"/>
+  <line x1="62" y1="70" x2="62" y2="115" stroke="white" stroke-width="1.5"/>
+  <line x1="72" y1="70" x2="72" y2="115" stroke="white" stroke-width="1.5"/>
+  <line x1="45" y1="80" x2="80" y2="80" stroke="white" stroke-width="1.5"/>
+  <line x1="45" y1="90" x2="80" y2="90" stroke="white" stroke-width="1.5"/>
+  <line x1="45" y1="100" x2="80" y2="100" stroke="white" stroke-width="1.5"/>
+  
+  <!-- Gear detail -->
+  <circle cx="95" cy="95" r="12" fill="none" stroke="white" stroke-width="2.5"/>
+  <circle cx="95" cy="95" r="5" fill="white"/>
+  <line x1="95" y1="83" x2="95" y2="87" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="95" y1="103" x2="95" y2="107" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="107" y1="95" x2="103" y2="95" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="87" y1="95" x2="83" y2="95" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
