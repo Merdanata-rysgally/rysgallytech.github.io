@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "title": {
+      "integrated": "BIRLEŞDIRILEN",
+      "engineering": "INŽENERÇILIK",
+      "and": "WE",
+      "trading": "SÖWDA",
+      "solutions": "ÇÖZGÜTLERI"
+    },
+    "subtitle": "Inženerçilik • Önümçilik • Söwda — Ýeke hyzmatdaş, Müşderi üçin ählisi bir ýerde!",
+    "cta": {
+      "primary": "Başlamak",
+      "secondary": "Hyzmatlarymyz"
+    },
+    "scroll": "Öwrenmek üçin aşak aýlaň"
+  },
+  "industries": {
+    "epc": {
+      "title": "EPC Tabşyrmak",
+      "shortTitle": "EPC",
+      "description": "Doly gurluşyk we inženerçilik taslamalary"
+    },
+    "water": {
+      "title": "Suw Arassalaýyş Ulgamlary",
+      "shortTitle": "Suw Arassalaýyş",
+      "description": "Professional suw arassalaýyş çözgütleri"
+    },
+    "furniture": {
+      "title": "Mebel Önümçiligi",
+      "shortTitle": "Mebel",
+      "description": "Ýokary hilli mebel önümçiligi"
+    },
+    "feed": {
+      "title": "Haýwan Iýmesi Öndürmek",
+      "shortTitle": "Haýwan Iýmesi",
+      "description": "Haýwan iýmelerini öndürmek"
+    },
+    "service": {
+      "title": "24/7 Hyzmat we Tehniki Hyzmat",
+      "shortTitle": "Hyzmat 24/7",
+      "description": "Hemişelik tehniki goldaw we hyzmat"
+    },
+    "auto": {
+      "title": "Awtomobil Bölekleri Söwdasy",
+      "shortTitle": "Awto Bölek",
+      "description": "Awtomobil bölekleriniň bölek söwdasy"
+    },
+    "retail": {
+      "title": "Söwda Dükanlary",
+      "shortTitle": "Söwda",
+      "description": "Söwda we bölek satuw dükanlary"
+    },
+    "landscaping": {
+      "title": "Ýer Meýdanlaryny Arassalamak",
+      "shortTitle": "Bagy-Bossanlyk",
+      "description": "Ýer meýdanlaryny arassalamak we bagy-bossanlyk işleri"
+    }
+  }
+}

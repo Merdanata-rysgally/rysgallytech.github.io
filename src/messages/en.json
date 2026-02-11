@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "title": {
+      "integrated": "INTEGRATED",
+      "engineering": "ENGINEERING",
+      "and": "&",
+      "trading": "TRADING",
+      "solutions": "SOLUTIONS"
+    },
+    "subtitle": "Engineering • Manufacturing • Trade — One partner, everything for the client in one place!",
+    "cta": {
+      "primary": "Get Started",
+      "secondary": "Our Services"
+    },
+    "scroll": "Scroll to explore"
+  },
+  "industries": {
+    "epc": {
+      "title": "EPC Turnkey Solutions",
+      "shortTitle": "EPC",
+      "description": "Complete construction and engineering projects"
+    },
+    "water": {
+      "title": "Water Treatment Systems",
+      "shortTitle": "Water Treatment",
+      "description": "Professional water treatment solutions"
+    },
+    "furniture": {
+      "title": "Furniture Manufacturing",
+      "shortTitle": "Furniture",
+      "description": "High-quality furniture manufacturing"
+    },
+    "feed": {
+      "title": "Animal Feed Production",
+      "shortTitle": "Animal Feed",
+      "description": "Animal feed manufacturing"
+    },
+    "service": {
+      "title": "24/7 Service & Maintenance",
+      "shortTitle": "Service 24/7",
+      "description": "Round-the-clock technical support and service"
+    },
+    "auto": {
+      "title": "Auto Parts Retail",
+      "shortTitle": "Auto Parts",
+      "description": "Retail sale of automotive parts"
+    },
+    "retail": {
+      "title": "Trade & Retail Stores",
+      "shortTitle": "Retail",
+      "description": "Trade and retail stores"
+    },
+    "landscaping": {
+      "title": "Site Clearing & Landscaping",
+      "shortTitle": "Landscaping",
+      "description": "Site clearing and landscaping services"
+    }
+  }
+}
