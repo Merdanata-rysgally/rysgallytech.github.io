@@ -50,9 +50,7 @@ export const Footer: React.FC = () => {
 
   const navItems = [
     { label: linkLabel('links.main', 'Main'), href: '#' },
-    { label: linkLabel('links.corporate', 'Corporate'), href: '#' },
     { label: linkLabel('links.business', 'Business'), href: '#' },
-    { label: linkLabel('links.newsroom', 'Newsroom'), href: '#' },
     { label: linkLabel('links.contact', 'Contact'), href: '#' },
   ];
 
@@ -67,52 +65,52 @@ export const Footer: React.FC = () => {
     <footer className="bg-background text-foreground border-t border-black/5 dark:border-white/10 pt-12 pb-10 px-6">
       <div className="max-w-6xl mx-auto flex flex-col gap-8">
 
-        {/* Logo + nav */}
+        {/* Logo + nav */ }
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-3">
             <div
               className="w-9 h-9 rounded-lg flex-shrink-0"
-              style={{ background: 'linear-gradient(135deg, #3fbad2, #1a8fa6)' }}
+              style={ { background: 'linear-gradient(135deg, #3fbad2, #1a8fa6)' } }
             />
-              <div className="flex flex-col">
-                <span className="text-sm font-semibold tracking-wide uppercase">Rysgally Tech</span>
-              <span className="text-xs text-foreground/50">{tagline}</span>
-              </div>
+            <div className="flex flex-col">
+              <span className="text-sm font-semibold tracking-wide uppercase">Rysgally Tech</span>
+              <span className="text-xs text-foreground/50">{ tagline }</span>
             </div>
+          </div>
 
           <nav className="flex flex-wrap items-center gap-4 text-sm font-medium">
-            {navItems.map((item, i) => (
+            { navItems.map((item, i) => (
               <a
-                key={i}
-                href={item.href}
+                key={ i }
+                href={ item.href }
                 className="px-3 py-1 rounded-full border border-transparent hover:border-foreground/15 hover:bg-foreground/5 transition-colors duration-150"
               >
-                {item.label}
+                { item.label }
               </a>
-            ))}
+            )) }
           </nav>
         </div>
 
         <div className="h-px bg-foreground/10 dark:bg-white/10" />
 
-        {/* Bottom bar */}
+        {/* Bottom bar */ }
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
           <span className="text-foreground/60">
-            © {new Date().getFullYear()} Rysgally Tech. {copyright}
+            © { new Date().getFullYear() } Rysgally Tech. { copyright }
           </span>
 
           <div className="flex items-center gap-2">
-            {socials.map((s, i) => (
+            { socials.map((s, i) => (
               <a
-                key={i}
-                href={s.href}
-                aria-label={s.label}
+                key={ i }
+                href={ s.href }
+                aria-label={ s.label }
                 className="w-9 h-9 rounded-full border border-foreground/10 dark:border-white/10 flex items-center justify-center
                            text-foreground/70 hover:text-foreground hover:border-foreground/30 transition-colors duration-150"
               >
-                {s.icon}
+                { s.icon }
               </a>
-            ))}
+            )) }
           </div>
         </div>
 

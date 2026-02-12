@@ -34,7 +34,7 @@ export const CompanyIntro: React.FC = () => {
   const tStats = useTranslations('stats');
 
   const stats = [
-    { value: 5, suffix: '+', label: tStats('years') },
+    { value: 32, suffix: '+', label: tStats('years') },
     { value: 8, suffix: '', label: tStats('industries') },
     { value: 98, suffix: '%', label: tStats('retention') },
   ];
