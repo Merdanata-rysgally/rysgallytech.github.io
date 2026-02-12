@@ -61,8 +61,8 @@ export const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="bg-background text-foreground border-t border-black/5 dark:border-white/10 pt-12 pb-10 px-6">
-      <div className="max-w-6xl mx-auto flex flex-col gap-8">
+    <footer className="bg-background text-foreground border-t border-black/5 dark:border-white/10 pt-12 pb-10">
+      <div className="max-w-screen-2xl mx-auto px-6 md:px-8 flex flex-col gap-8">
 
         {/* Logo + nav */ }
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
@@ -72,7 +72,7 @@ export const Footer: React.FC = () => {
               style={ { background: 'linear-gradient(135deg, #3fbad2, #1a8fa6)' } }
             />
             <div className="flex flex-col">
-              <span className="text-sm font-semibold tracking-wide uppercase">Rysgally Tech</span>
+              <span className="text-sm font-semibold tracking-wide uppercase">Rysgally Technology</span>
               <span className="text-xs text-foreground/50">{ tagline }</span>
             </div>
           </div>
@@ -95,7 +95,7 @@ export const Footer: React.FC = () => {
         {/* Bottom bar */ }
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
           <span className="text-foreground/60">
-            © { new Date().getFullYear() } Rysgally Tech. { copyright }
+            © { new Date().getFullYear() } Rysgally Technology. { copyright }
           </span>
 
           <div className="flex items-center gap-2">

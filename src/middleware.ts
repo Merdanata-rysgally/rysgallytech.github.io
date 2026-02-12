@@ -9,5 +9,5 @@ export default createMiddleware({
 
 export const config = {
   // Match only internationalized pathnames
-  matcher: ["/", "/(tk|ru|en)/:path*"],
+  matcher: ["/", "/(tk|ru|en)/:path*", "/((?!_next|favicon.ico).*)"],
 };

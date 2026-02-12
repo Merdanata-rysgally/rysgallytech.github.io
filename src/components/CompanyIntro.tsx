@@ -61,7 +61,7 @@ export const CompanyIntro: React.FC = () => {
   };
 
   return (
-    <section className="bg-gray-50 py-16 md:py-24 px-6">
+    <section className="bg-gray-50 py-16 md:py-24 px-6 md:px-8">
       <div className="max-w-3xl mx-auto text-center">
         <motion.p
           initial={{ opacity: 0, y: 28 }}

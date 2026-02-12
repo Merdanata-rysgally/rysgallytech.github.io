@@ -25,7 +25,7 @@
     "retention": "Удержание клиентов"
   },
   "intro": {
-    "body": "Rysgally Tech — это корпорация, объединяющая строительство, водоочистку, производство мебели, производство кормов, аренду техники, техническое обслуживание, автозапчасти и электронную торговлю, совместно обеспечивая широкий спектр услуг.",
+    "body": "Rysgally Technology — это корпорация, объединяющая строительство, водоочистку, производство мебели, производство кормов, аренду техники, техническое обслуживание, автозапчасти и электронную торговлю, совместно обеспечивая широкий спектр услуг.",
     "keywords": [
       "строительство",
       "водоочистку",
@@ -53,49 +53,49 @@
       "title": "Строительство и EPC-проекты",
       "shortTitle": "Строительство и EPC",
       "description": "Полные строительные и инженерные проекты под ключ",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Tech реализует комплексные EPC-проекты — от технико-экономических обоснований и детального проектирования до закупок, строительства и ввода объектов в эксплуатацию.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Наши многопрофильные команды управляют сложными промышленными объектами, коммерческими зданиями и инфраструктурными проектами по всему региону.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Строгий контроль качества и прозрачная отчётность обеспечивают выполнение проектов в рамках бюджета и сроков."
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Technology реализует комплексные EPC-проекты — от технико-экономических обоснований и детального проектирования до закупок, строительства и ввода объектов в эксплуатацию.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Наши многопрофильные команды управляют сложными промышленными объектами, коммерческими зданиями и инфраструктурными проектами по всему региону.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Строгий контроль качества и прозрачная отчётность обеспечивают выполнение проектов в рамках бюджета и сроков."
     },
     "water": {
       "title": "Водоочистка и фильтрация",
       "shortTitle": "Водофильтрация",
       "description": "Производство водяных фильтров и систем очистки",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Tech проектирует и производит современные системы водоподготовки и фильтрации для муниципальных, промышленных и сельскохозяйственных заказчиков.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Каждая система проходит строгие испытания на соответствие международным стандартам качества воды перед поставкой заказчику.\n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris. Наша команда инженеров постоянно совершенствует технологии с целью снижения энергопотребления и эксплуатационных затрат."
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Technology проектирует и производит современные системы водоподготовки и фильтрации для муниципальных, промышленных и сельскохозяйственных заказчиков.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Каждая система проходит строгие испытания на соответствие международным стандартам качества воды перед поставкой заказчику.\n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris. Наша команда инженеров постоянно совершенствует технологии с целью снижения энергопотребления и эксплуатационных затрат."
     },
     "furniture": {
       "title": "Производство мебели",
       "shortTitle": "Мебель",
       "description": "Высококачественное производство и дизайн мебели",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Мебельное подразделение Rysgally Tech производит офисную, коммерческую и жилую мебель премиального класса из экологически чистых материалов.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Мы предлагаем услуги индивидуального проектирования: корпоративные клиенты и застройщики могут задать любые размеры, отделку и обивку.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. От эскизов до белоперчаточной доставки и монтажа — Rysgally Tech берёт на себя полный жизненный цикл мебели."
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Мебельное подразделение Rysgally Technology производит офисную, коммерческую и жилую мебель премиального класса из экологически чистых материалов.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Мы предлагаем услуги индивидуального проектирования: корпоративные клиенты и застройщики могут задать любые размеры, отделку и обивку.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. От эскизов до белоперчаточной доставки и монтажа — Rysgally Technology берёт на себя полный жизненный цикл мебели."
     },
     "feed": {
       "title": "Производство кормов",
       "shortTitle": "Корма",
       "description": "Производство премиальных кормов для скота и птицы",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Tech эксплуатирует современный завод по производству сбалансированных комбикормов для крупного рогатого скота, овец, птицы и аквакультуры.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Каждая партия проходит проверку в собственной лаборатории на влажность, уровень протеина и микробиологическую безопасность перед отгрузкой.\n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris. Гибкая упаковка — от поставок насыпью до паллетированных мешков по 25 кг — обеспечивает эффективную логистику для хозяйств любого масштаба."
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Technology эксплуатирует современный завод по производству сбалансированных комбикормов для крупного рогатого скота, овец, птицы и аквакультуры.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Каждая партия проходит проверку в собственной лаборатории на влажность, уровень протеина и микробиологическую безопасность перед отгрузкой.\n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris. Гибкая упаковка — от поставок насыпью до паллетированных мешков по 25 кг — обеспечивает эффективную логистику для хозяйств любого масштаба."
     },
     "equipment": {
       "title": "Аренда сельхозтехники",
       "shortTitle": "Аренда техники",
       "description": "Электротехнические транспортные средства и машины для сельского хозяйства",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Tech располагает современным парком сельскохозяйственной и электротехнической техники, доступной для краткосрочной и долгосрочной аренды.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Вся техника обслуживается в соответствии со спецификациями производителя между арендными периодами, что сводит к минимуму простои на объектах.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Наша программа аренды позволяет агробизнесу наращивать мощности в пиковые сезоны без капитальных затрат на покупку техники."
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Technology располагает современным парком сельскохозяйственной и электротехнической техники, доступной для краткосрочной и долгосрочной аренды.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Вся техника обслуживается в соответствии со спецификациями производителя между арендными периодами, что сводит к минимуму простои на объектах.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Наша программа аренды позволяет агробизнесу наращивать мощности в пиковые сезоны без капитальных затрат на покупку техники."
     },
     "service": {
       "title": "Техобслуживание 24/7",
       "shortTitle": "Сервис 24/7",
       "description": "Круглосуточная техническая поддержка и обслуживание",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Сервисное подразделение Rysgally Tech оказывает круглосуточное планово-предупредительное и аварийное обслуживание промышленных объектов, коммерческих зданий и инфраструктуры.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Мы предлагаем структурированные соглашения об уровне обслуживания — от базовых ежегодных осмотров до комплексных договоров с гарантированным временем отклика.\n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris. Цифровое отслеживание активов и предиктивная аналитика помогают предупреждать сбои до их возникновения."
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Сервисное подразделение Rysgally Technology оказывает круглосуточное планово-предупредительное и аварийное обслуживание промышленных объектов, коммерческих зданий и инфраструктуры.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Мы предлагаем структурированные соглашения об уровне обслуживания — от базовых ежегодных осмотров до комплексных договоров с гарантированным временем отклика.\n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris. Цифровое отслеживание активов и предиктивная аналитика помогают предупреждать сбои до их возникновения."
     },
     "auto": {
       "title": "Автозапчасти и расходники",
       "shortTitle": "Автозапчасти",
       "description": "Качественные автомобильные запчасти и аксессуары",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Tech поставляет широкий ассортимент оригинальных и OEM-аналогов автозапчастей для легковых автомобилей, лёгких коммерческих фургонов и тяжёлых грузовиков.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Наша логистическая сеть обеспечивает доставку на следующий день в автомастерские и операторам автопарков по всему региону.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Техническая поддержка наших специалистов по запчастям помогает быстро подобрать нужный компонент, сокращая время простоя транспортных средств."
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Technology поставляет широкий ассортимент оригинальных и OEM-аналогов автозапчастей для легковых автомобилей, лёгких коммерческих фургонов и тяжёлых грузовиков.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Наша логистическая сеть обеспечивает доставку на следующий день в автомастерские и операторам автопарков по всему региону.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Техническая поддержка наших специалистов по запчастям помогает быстро подобрать нужный компонент, сокращая время простоя транспортных средств."
     },
     "retail": {
       "title": "Платформа электронной торговли",
       "shortTitle": "Онлайн-рынок",
       "description": "Цифровая торговая площадка для промышленных товаров",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Tech управляет B2B- и B2C-платформой электронной торговли, соединяющей промышленных поставщиков с покупателями по всему региону.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Платформа интегрируется с ERP-системами корпоративных отделов закупок, обеспечивая автоматизированные заявки, видимость запасов в реальном времени и консолидированное выставление счетов.\n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris. Выделенный центр выполнения заказов гарантирует точную комплектацию, упаковку и своевременную отправку товаров."
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Technology управляет B2B- и B2C-платформой электронной торговли, соединяющей промышленных поставщиков с покупателями по всему региону.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Платформа интегрируется с ERP-системами корпоративных отделов закупок, обеспечивая автоматизированные заявки, видимость запасов в реальном времени и консолидированное выставление счетов.\n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris. Выделенный центр выполнения заказов гарантирует точную комплектацию, упаковку и своевременную отправку товаров."
     }
   }
 }
