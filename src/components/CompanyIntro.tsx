@@ -45,12 +45,12 @@ export const CompanyIntro: React.FC = () => {
 
   // Split sentence into parts, wrapping keywords in cyan spans
   const renderHighlighted = (text: string, words: string[]) => {
-    let result: React.ReactNode[] = [text];
+    let result: (string | React.ReactElement)[] = [text];
     words.forEach((word) => {
-      result = result.flatMap((part) => {
+      result = result.flatMap((part): (string | React.ReactElement)[] => {
         if (typeof part !== 'string') return [part];
         const segments = part.split(word);
-        return segments.flatMap((seg, i) =>
+        return segments.flatMap((seg, i): (string | React.ReactElement)[] =>
           i < segments.length - 1
             ? [seg, <span key={`${word}-${i}`} className="text-cyan-500 font-semibold">{word}</span>]
             : [seg]
