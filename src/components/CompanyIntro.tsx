@@ -61,7 +61,7 @@ export const CompanyIntro: React.FC = () => {
   };
 
   return (
-    <section className="bg-gray-50 py-24 px-6">
+    <section className="bg-gray-50 py-16 md:py-24 px-6">
       <div className="max-w-3xl mx-auto text-center">
         <motion.p
           initial={{ opacity: 0, y: 28 }}
@@ -88,7 +88,7 @@ export const CompanyIntro: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-          className="grid grid-cols-3 gap-8"
+          className="grid grid-cols-1 sm:grid-cols-3 gap-8"
         >
           {stats.map((stat, i) => (
             <motion.div

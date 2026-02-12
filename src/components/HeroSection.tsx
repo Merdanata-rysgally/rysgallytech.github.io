@@ -40,7 +40,7 @@ export const HeroSection: React.FC = () => {
 
 
   return (
-    <section className="h-[92vh] bg-background overflow-hidden flex items-stretch">
+    <section className="h-auto md:h-[92vh] bg-background overflow-hidden flex flex-col md:flex-row items-stretch">
 
       {/* Subtle noise grain */ }
       <div
@@ -53,15 +53,15 @@ export const HeroSection: React.FC = () => {
       />
 
       {/* ── LEFT PANEL ── */ }
-      <div className="relative z-20 flex flex-col justify-center w-[44%] min-w-[340px] px-12 pt-24 pb-12 border-r border-white/[0.06] flex-shrink-0">
+      <div className="relative z-20 flex flex-col justify-center items-center md:items-start w-full md:w-[44%] md:min-w-[340px] px-6 md:px-12 pt-32 pb-12 md:pb-12 md:border-r border-b md:border-b-0 border-white/[0.06] md:flex-shrink-0">
 
         {/* Headline */ }
         <motion.h1
           initial={ { opacity: 0, y: 40 } }
           animate={ { opacity: 1, y: 0 } }
           transition={ { duration: 0.9, ease: [0.16, 1, 0.3, 1] } }
-          className="font-black leading-[0.9] tracking-tighter mb-8"
-          style={ { fontSize: 'clamp(3.2rem, 5.5vw, 6.5rem)' } }
+          className="font-black leading-[0.9] tracking-tighter text-center md:text-left"
+          style={ { fontSize: 'clamp(2.8rem, 8vw, 6.5rem)' } }
         >
           <span className="block text-foreground">{ t('title.integrated') }</span>
           <span
@@ -97,7 +97,7 @@ export const HeroSection: React.FC = () => {
       {/* ── RIGHT PANEL — bento grid ── */ }
       <div
         ref={ gridRef }
-        className="relative flex-1 overflow-hidden p-5 pt-16"
+        className="relative flex-1 overflow-hidden p-3 md:p-5 pt-4 pb-12 md:pt-16 md:h-full"
         onMouseEnter={ () => setGridActive(true) }
         onMouseLeave={ () => {
           setGridActive(false);
@@ -106,15 +106,7 @@ export const HeroSection: React.FC = () => {
         } }
       >
 
-        <div
-          className="h-full w-full"
-          style={ {
-            display: 'grid',
-            gridTemplateColumns: 'repeat(3, 1fr)',
-            gridTemplateRows: 'repeat(6, 1fr)',
-            gap: '10px',
-          } }
-        >
+        <div className="bento-grid w-full">
           <BentoCard industry={ INDUSTRIES[0] } index={ 0 } style={ { gridColumn: '1', gridRow: '1 / 4' } } onCardHover={ (rect) => handleCardHover(rect, 0) } isFocused={ hoveredIndex === 0 } />
           <BentoCard industry={ INDUSTRIES[1] } index={ 1 } style={ { gridColumn: '2', gridRow: '1 / 3' } } onCardHover={ (rect) => handleCardHover(rect, 1) } isFocused={ hoveredIndex === 1 } />
           <BentoCard industry={ INDUSTRIES[2] } index={ 2 } style={ { gridColumn: '3', gridRow: '1 / 3' } } onCardHover={ (rect) => handleCardHover(rect, 2) } isFocused={ hoveredIndex === 2 } />

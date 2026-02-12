@@ -57,7 +57,7 @@ export const BentoCard: React.FC<BentoCardProps> = ({ industry, index, style, on
         alt={ t(`${industry.id}.title`) }
         fill
         className="object-cover transition-transform duration-700 group-hover:scale-110"
-        sizes="33vw"
+        sizes="(max-width: 768px) 40vw, 33vw"
       />
 
       {/* Permanent dark-to-transparent gradient at bottom */ }
