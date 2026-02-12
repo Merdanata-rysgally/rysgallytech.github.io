@@ -30,7 +30,6 @@ export const Navbar: React.FC = () => {
 
   const links = [
     { label: t('main'), href: base },
-    { label: t('business'), href: `${base}/business` },
     { label: t('contact'), href: `${base}/contact` },
   ];
 

@@ -4,21 +4,27 @@ import { useEffect, useState } from 'react';
 import { motion, useMotionValue, useSpring } from 'framer-motion';
 import { useCursor } from './CursorContext';
 
-const CURSOR_SIZE_DEFAULT = 48; // keep same as hover for consistent radius
+const CURSOR_SIZE_DEFAULT = 48;
 const CURSOR_SIZE_HOVER   = 48;
-const MAGNET_STRENGTH     = 0.35; // 0 = no pull, 1 = fully locked to center
+const MAGNET_STRENGTH     = 0.35;
 
 export function MagneticCursor() {
   const { cursor } = useCursor();
   const [mounted, setMounted] = useState(false);
 
-  // Raw mouse position
-  const rawX = useMotionValue(-200);
-  const rawY = useMotionValue(-200);
+  // Target position (what the cursor should track)
+  const targetX = useMotionValue(-200);
+  const targetY = useMotionValue(-200);
 
-// Spring-smoothed position (slightly quicker response)
-const springX = useSpring(rawX, { stiffness: 260, damping: 16 });
-const springY = useSpring(rawY, { stiffness: 260, damping: 16 });
+  // Fast spring for normal movement (stiff = near-instant)
+  const fastX = useSpring(targetX, { stiffness: 1000, damping: 50 });
+  const fastY = useSpring(targetY, { stiffness: 1000, damping: 50 });
+
+  // Slow spring for magnetic pull on bento cards
+  const slowX = useSpring(targetX, { stiffness: 260, damping: 16 });
+  const slowY = useSpring(targetY, { stiffness: 260, damping: 16 });
+
+  const isMagnetic = cursor.magnetX !== null && cursor.magnetY !== null;
 
   useEffect(() => {
     setMounted(true);
@@ -28,18 +34,16 @@ const springY = useSpring(rawY, { stiffness: 260, damping: 16 });
       const my = cursor.magnetY;
 
       if (mx !== null && my !== null) {
-        // Pull cursor toward card center
-        rawX.set(e.clientX + (mx - e.clientX) * MAGNET_STRENGTH);
-        rawY.set(e.clientY + (my - e.clientY) * MAGNET_STRENGTH);
+        targetX.set(e.clientX + (mx - e.clientX) * MAGNET_STRENGTH);
+        targetY.set(e.clientY + (my - e.clientY) * MAGNET_STRENGTH);
       } else {
-        rawX.set(e.clientX);
-        rawY.set(e.clientY);
+        targetX.set(e.clientX);
+        targetY.set(e.clientY);
       }
     };
 
     window.addEventListener('mousemove', move);
     return () => window.removeEventListener('mousemove', move);
-  // Re-register when magnet target changes so strength applies immediately
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cursor.magnetX, cursor.magnetY]);
 
@@ -49,6 +53,10 @@ const springY = useSpring(rawY, { stiffness: 260, damping: 16 });
   const size = isHovering ? CURSOR_SIZE_HOVER : CURSOR_SIZE_DEFAULT;
   const color = cursor.color ?? '#3fbad2';
 
+  // Use slow spring while magnetic, fast spring otherwise
+  const displayX = isMagnetic ? slowX : fastX;
+  const displayY = isMagnetic ? slowY : fastY;
+
   return (
     <>
       {/* Hide native cursor globally when this component is mounted */}
@@ -57,8 +65,8 @@ const springY = useSpring(rawY, { stiffness: 260, damping: 16 });
       <motion.div
         className="fixed top-0 left-0 pointer-events-none z-[9999] flex items-center justify-center rounded-full select-none"
         style={{
-          x: springX,
-          y: springY,
+          x: displayX,
+          y: displayY,
           translateX: '-50%',
           translateY: '-50%',
           backgroundColor: 'rgba(255,255,255,0.08)',

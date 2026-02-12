@@ -4,7 +4,8 @@ import React, { useRef, useState } from 'react';
 import { motion, useSpring } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { BentoCard } from './BentoCard';
-import { INDUSTRIES } from '@/lib/constants';
+import { IndustryModal } from './IndustryModal';
+import { INDUSTRIES, type Industry } from '@/lib/constants';
 
 export const HeroSection: React.FC = () => {
   const t = useTranslations('hero');
@@ -16,6 +17,9 @@ export const HeroSection: React.FC = () => {
   const [anyHovered, setAnyHovered] = useState(false);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [gridActive, setGridActive] = useState(false);
+
+  // Modal
+  const [activeIndustry, setActiveIndustry] = useState<Industry | null>(null);
 
   const springOpts = { stiffness: 280, damping: 30 };
   const spT = useSpring(0, springOpts);
@@ -40,7 +44,8 @@ export const HeroSection: React.FC = () => {
 
 
   return (
-    <section className="h-auto md:h-[92vh] bg-background overflow-hidden flex flex-col md:flex-row items-stretch">
+    <>
+    <section className="h-auto md:h-[92vh] bg-background overflow-hidden flex flex-col md:flex-row items-stretch cursor-default">
 
       {/* Subtle noise grain */ }
       <div
@@ -97,7 +102,7 @@ export const HeroSection: React.FC = () => {
       {/* ── RIGHT PANEL — bento grid ── */ }
       <div
         ref={ gridRef }
-        className="relative flex-1 overflow-hidden p-3 md:p-5 pt-4 pb-12 md:pt-16 md:h-full"
+        className="relative flex-1 overflow-hidden p-3 md:p-5 pt-4 pb-12 md:pt-16 md:h-full cursor-pointer"
         onMouseEnter={ () => setGridActive(true) }
         onMouseLeave={ () => {
           setGridActive(false);
@@ -107,14 +112,29 @@ export const HeroSection: React.FC = () => {
       >
 
         <div className="bento-grid w-full">
-          <BentoCard industry={ INDUSTRIES[0] } index={ 0 } style={ { gridColumn: '1', gridRow: '1 / 4' } } onCardHover={ (rect) => handleCardHover(rect, 0) } isFocused={ hoveredIndex === 0 } />
-          <BentoCard industry={ INDUSTRIES[1] } index={ 1 } style={ { gridColumn: '2', gridRow: '1 / 3' } } onCardHover={ (rect) => handleCardHover(rect, 1) } isFocused={ hoveredIndex === 1 } />
-          <BentoCard industry={ INDUSTRIES[2] } index={ 2 } style={ { gridColumn: '3', gridRow: '1 / 3' } } onCardHover={ (rect) => handleCardHover(rect, 2) } isFocused={ hoveredIndex === 2 } />
-          <BentoCard industry={ INDUSTRIES[3] } index={ 3 } style={ { gridColumn: '2', gridRow: '3 / 5' } } onCardHover={ (rect) => handleCardHover(rect, 3) } isFocused={ hoveredIndex === 3 } />
-          <BentoCard industry={ INDUSTRIES[4] } index={ 4 } style={ { gridColumn: '3', gridRow: '3 / 5' } } onCardHover={ (rect) => handleCardHover(rect, 4) } isFocused={ hoveredIndex === 4 } />
-          <BentoCard industry={ INDUSTRIES[5] } index={ 5 } style={ { gridColumn: '1', gridRow: '4 / 7' } } onCardHover={ (rect) => handleCardHover(rect, 5) } isFocused={ hoveredIndex === 5 } />
-          <BentoCard industry={ INDUSTRIES[6] } index={ 6 } style={ { gridColumn: '2', gridRow: '5 / 7' } } onCardHover={ (rect) => handleCardHover(rect, 6) } isFocused={ hoveredIndex === 6 } />
-          <BentoCard industry={ INDUSTRIES[7] } index={ 7 } style={ { gridColumn: '3', gridRow: '5 / 7' } } onCardHover={ (rect) => handleCardHover(rect, 7) } isFocused={ hoveredIndex === 7 } />
+          { INDUSTRIES.map((ind, i) => {
+            const positions = [
+              { gridColumn: '1', gridRow: '1 / 4' },
+              { gridColumn: '2', gridRow: '1 / 3' },
+              { gridColumn: '3', gridRow: '1 / 3' },
+              { gridColumn: '2', gridRow: '3 / 5' },
+              { gridColumn: '3', gridRow: '3 / 5' },
+              { gridColumn: '1', gridRow: '4 / 7' },
+              { gridColumn: '2', gridRow: '5 / 7' },
+              { gridColumn: '3', gridRow: '5 / 7' },
+            ];
+            return (
+              <BentoCard
+                key={ ind.id }
+                industry={ ind }
+                index={ i }
+                style={ positions[i] }
+                onCardHover={ (rect) => handleCardHover(rect, i) }
+                isFocused={ hoveredIndex === i }
+                onClick={ () => setActiveIndustry(ind) }
+              />
+            );
+          }) }
         </div>
 
         {/* Dim-all layer when inside grid and not on a card */ }
@@ -147,5 +167,8 @@ export const HeroSection: React.FC = () => {
       </div>
 
     </section>
+
+    <IndustryModal industry={ activeIndustry } onClose={ () => setActiveIndustry(null) } />
+    </>
   );
 };

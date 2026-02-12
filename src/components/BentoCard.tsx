@@ -13,9 +13,10 @@ interface BentoCardProps {
   style?: React.CSSProperties;
   onCardHover?: (rect: DOMRect | null, index: number | null) => void;
   isFocused?: boolean;
+  onClick?: () => void;
 }
 
-export const BentoCard: React.FC<BentoCardProps> = ({ industry, index, style, onCardHover, isFocused = false }) => {
+export const BentoCard: React.FC<BentoCardProps> = ({ industry, index, style, onCardHover, isFocused = false, onClick }) => {
   const t = useTranslations('industries');
   const [isHovered, setIsHovered] = useState(false);
   const cardRef = React.useRef<HTMLDivElement>(null);
@@ -33,6 +34,7 @@ export const BentoCard: React.FC<BentoCardProps> = ({ industry, index, style, on
       initial={ { opacity: 0, scale: 0.96 } }
       animate={ { opacity: 1, scale: isFocused ? 1.02 : 1 } }
       transition={ { delay: index * 0.07, duration: 0.45, ease: [0.25, 0.46, 0.45, 0.94] } }
+      onClick={ onClick }
       onMouseEnter={ () => {
         setIsHovered(true);
         if (cardRef.current) {

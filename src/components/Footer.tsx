@@ -50,7 +50,6 @@ export const Footer: React.FC = () => {
 
   const navItems = [
     { label: linkLabel('links.main', 'Main'), href: '#' },
-    { label: linkLabel('links.business', 'Business'), href: '#' },
     { label: linkLabel('links.contact', 'Contact'), href: '#' },
   ];
 
