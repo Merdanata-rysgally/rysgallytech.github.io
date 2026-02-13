@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { useTranslations } from 'next-intl';
+import { Logo } from './Logo';
 
 const FacebookIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
@@ -45,7 +46,6 @@ export const Footer: React.FC = () => {
   };
 
   const linkLabel = (key: string, fallback: string) => safeT(key, fallback);
-  const tagline = safeT('tagline', 'Engineering • Manufacturing • Trade');
   const copyright = safeT('copyright', 'All rights reserved.');
 
   const navItems = [
@@ -66,16 +66,7 @@ export const Footer: React.FC = () => {
 
         {/* Logo + nav */ }
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-          <div className="flex items-center gap-3">
-            <div
-              className="w-9 h-9 rounded-lg flex-shrink-0"
-              style={ { background: 'linear-gradient(135deg, #3fbad2, #1a8fa6)' } }
-            />
-            <div className="flex flex-col">
-              <span className="text-sm font-semibold tracking-wide uppercase">Rysgally Technology</span>
-              <span className="text-xs text-foreground/50">{ tagline }</span>
-            </div>
-          </div>
+          <Logo theme="light" />
 
           <nav className="flex flex-wrap items-center gap-4 text-sm font-medium">
             { navItems.map((item, i) => (

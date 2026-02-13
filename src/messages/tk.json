@@ -25,12 +25,12 @@
     "retention": "Müşderi Saklaýyş"
   },
   "intro": {
-    "body": "Rysgally Technology — gurluşyk, suw arassalaýyş, mebel önümçiligi, haýwan iýmesi öndürmek, tehnika kärendesi, tehniki hyzmat, awtomobil bölekleri we elektron söwdany öz içine alýan korporasiýa bolup, hyzmatlaryn giň toplumyny hödürleýär.",
+    "body": "Rysgally Technology — gurluşyk, suw arassalaýyş, mebel önümçiligi, haýwan iýmiti öndürmek, tehnika kärendesi, tehniki hyzmat, awtomobil bölekleri we elektron söwdany öz içine alýan korporasiýa bolup, hyzmatlaryn giň toplumyny hödürleýär.",
     "keywords": [
       "gurluşyk",
       "suw arassalaýyş",
       "mebel önümçiligi",
-      "haýwan iýmesi öndürmek",
+      "haýwan iýmiti öndürmek",
       "tehnika kärendesi",
       "tehniki hyzmat",
       "awtomobil bölekleri",
@@ -46,6 +46,42 @@
       "business": "Işewürlik",
       "newsroom": "Habarlar",
       "contact": "Habarlaşmak"
+    }
+  },
+  "contact": {
+    "badge": "Habarlaşmak",
+    "heading": "Bilelikde guraly",
+    "subheading": "Toparymyz bilen habarlaşyň — bir iş güni içinde jogap berýäris.",
+    "form": {
+      "name": "Doly adyňyz",
+      "namePlaceholder": "Myrat Myradow",
+      "email": "E-poçta salgysy",
+      "emailPlaceholder": "myrat@kompaniýa.com",
+      "phone": "Telefon belgisi",
+      "phonePlaceholder": "+993 …",
+      "subject": "Mowzuk",
+      "subjectPlaceholder": "Nähili kömek edip bileris?",
+      "message": "Habar",
+      "messagePlaceholder": "Taslamaňyz ýa-da sorawyňyz barada gürrüň beriň…",
+      "submit": "Habar iberiň",
+      "sending": "Iberilýär…",
+      "success": "Habar iberildi! Ýakyn wagtda habarlaşarys.",
+      "error": "Bir zat ters gitdi. Gaýtadan synanyşyň."
+    },
+    "whatsapp": "WhatsApp-da ýaz",
+    "info": {
+      "heading": "Habarlaşmak Maglumatlary",
+      "legalAddress": "Ýuridiki salgy",
+      "legalAddressValue": "Türkmenistan, Aşgabat şäheri, Berkararlyk etraby, 11-nji mikroraýon, Baba Annanow köçesi, 114/1 jaý",
+      "productionAddress": "Önümçilik salgysy",
+      "productionAddressValue": "Ahal welaýaty, Ak Bugdaý etraby, Senagat zolagy, Zümmeret köçesi, 28-nji jaý",
+      "website": "Web sahypa",
+      "websiteValue": "rysgallytech.com",
+      "hours": "Iş sagatlary",
+      "hoursValue": "Duş – Anna, 09:00 – 18:00"
+    },
+    "map": {
+      "heading": "Kartada tap"
     }
   },
   "industries": {
@@ -68,9 +104,9 @@
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Technology-iň mebel bölümi ekologiki taýdan arassa materiallardan öndürilen premium derejeli ofis, täjirçilik we ýaşaýyş mebel önümlerini çykarýar.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Korporatiw müşderiler we gurluşykçylar üçin ýörite dizaýn hyzmatlaryny hödürleýäris — ölçeglerden başlap örtge we deri bezegine çenli.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Eskizden ak ellikli eltip bermä we gurnamaga çenli Rysgally Technology mebeliň doly ýaşaýyş döwrüni öz üstüne alýar."
     },
     "feed": {
-      "title": "Haýwan Iýmesi Öndürmek",
-      "shortTitle": "Haýwan Iýmesi",
-      "description": "Premium mal we guş iýmesini öndürmek",
+      "title": "Haýwan iýmiti Öndürmek",
+      "shortTitle": "Haýwan iýmiti",
+      "description": "Premium mal we guş iýmitini öndürmek",
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Technology iýmit deňagramlylygy saklanylýan mal, goýun, guş we suw önümleri üçin kombinlenen iýme öndürýän döwrebap zawody dolandyrýar.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Her partiýa ugradylmazdan ozal öz laboratoriýamyzda çyglylyk, belok derejesi we mikrobiologiki howpsuzlyk barlagyndan geçirilýär.\n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris. Dökme eltmekden 25 kg haltalar bilen palet görnüşine çenli çeýe gaplaýyş opsiýalary islendik ululyktaky fermalara netijeli logistikany üpjün edýär."
     },
     "equipment": {

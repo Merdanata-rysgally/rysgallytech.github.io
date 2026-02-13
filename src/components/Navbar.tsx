@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations, useLocale } from 'next-intl';
 import { useRouter, usePathname } from '@/navigation';
+import { Logo } from './Logo';
 
 const LOCALES = [
   { code: 'en', label: 'EN', name: 'English' },
@@ -80,14 +81,8 @@ export const Navbar: React.FC = () => {
       <div className="max-w-screen-2xl mx-auto px-6 md:px-8 h-16 flex items-center justify-between">
 
         {/* Logo */}
-        <Link href={base} className="flex items-center gap-2.5 group">
-          <div
-            className="w-7 h-7 rounded-md flex-shrink-0 transition-transform duration-200 group-hover:scale-105"
-            style={{ background: 'linear-gradient(135deg, #3fbad2, #1a8fa6)' }}
-          />
-          <span className="text-white font-bold text-sm tracking-widest uppercase">
-            Rysgally Technology
-          </span>
+        <Link href={base} className="group">
+          <Logo theme="light" />
         </Link>
 
         {/* Desktop nav links + lang switcher */}

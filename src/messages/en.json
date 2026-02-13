@@ -48,6 +48,42 @@
       "contact": "Contact"
     }
   },
+  "contact": {
+    "badge": "Get in Touch",
+    "heading": "Let's Build Together",
+    "subheading": "Reach out to our team — we respond within one business day.",
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "John Smith",
+      "email": "Email Address",
+      "emailPlaceholder": "john@company.com",
+      "phone": "Phone Number",
+      "phonePlaceholder": "+993 …",
+      "subject": "Subject",
+      "subjectPlaceholder": "How can we help?",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your project or inquiry…",
+      "submit": "Send Message",
+      "sending": "Sending…",
+      "success": "Message sent! We'll be in touch soon.",
+      "error": "Something went wrong. Please try again."
+    },
+    "whatsapp": "Chat on WhatsApp",
+    "info": {
+      "heading": "Contact Information",
+      "legalAddress": "Legal Address",
+      "legalAddressValue": "Turkmenistan, Ashgabat city, Berkararlyk district, 11th microdistrict, Baba Annanova Street, 114/1",
+      "productionAddress": "Production Address",
+      "productionAddressValue": "Ahal region, Ak Bugday district, Industrial zone, Zummeret Street, 28",
+      "website": "Website",
+      "websiteValue": "rysgallytech.com",
+      "hours": "Working Hours",
+      "hoursValue": "Mon – Fri, 09:00 – 18:00"
+    },
+    "map": {
+      "heading": "Find Us on the Map"
+    }
+  },
   "industries": {
     "epc": {
       "title": "Construction & EPC Projects",
