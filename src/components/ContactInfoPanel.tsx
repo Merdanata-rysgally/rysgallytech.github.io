@@ -20,7 +20,7 @@ const fadeUp = {
   }),
 };
 
-const WHATSAPP_NUMBER = '99312000000'; // replace with real number
+const WHATSAPP_NUMBER = '99365194455';
 
 export const ContactInfoPanel: React.FC = () => {
   const t = useTranslations('contact');
@@ -52,66 +52,66 @@ export const ContactInfoPanel: React.FC = () => {
   return (
     <div className="flex flex-col gap-6">
 
-      {/* Info list */}
+      {/* Info list */ }
       <motion.div
-        initial={{ opacity: 0, y: 24 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+        initial={ { opacity: 0, y: 24 } }
+        whileInView={ { opacity: 1, y: 0 } }
+        viewport={ { once: true } }
+        transition={ { duration: 0.6, ease: [0.16, 1, 0.3, 1] } }
         className="rounded-2xl border border-gray-100 bg-gray-50 p-6 md:p-8"
       >
         <ul className="flex flex-col gap-6">
-          {items.map(({ icon: Icon, label, value, href }, i) => (
+          { items.map(({ icon: Icon, label, value, href }, i) => (
             <motion.li
-              key={label}
-              custom={i}
-              variants={fadeUp}
+              key={ label }
+              custom={ i }
+              variants={ fadeUp }
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true }}
+              viewport={ { once: true } }
               className="flex items-start gap-4"
             >
               <div className="mt-0.5 w-9 h-9 rounded-xl bg-[#3fbad2]/10 border border-[#3fbad2]/20 flex items-center justify-center flex-shrink-0">
-                <Icon size={16} className="text-[#3fbad2]" />
+                <Icon size={ 16 } className="text-[#3fbad2]" />
               </div>
               <div className="flex flex-col gap-0.5">
                 <span className="text-[11px] uppercase tracking-wider text-gray-400 font-medium">
-                  {label}
+                  { label }
                 </span>
-                {href ? (
+                { href ? (
                   <a
-                    href={href}
+                    href={ href }
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm text-[#3fbad2] leading-snug font-medium hover:underline"
                   >
-                    {value}
+                    { value }
                   </a>
                 ) : (
-                  <span className="text-sm text-gray-800 leading-snug font-medium">{value}</span>
-                )}
+                  <span className="text-sm text-gray-800 leading-snug font-medium">{ value }</span>
+                ) }
               </div>
             </motion.li>
-          ))}
+          )) }
         </ul>
       </motion.div>
 
-      {/* WhatsApp CTA */}
+      {/* WhatsApp CTA */ }
       <motion.a
-        href={`https://wa.me/${WHATSAPP_NUMBER}`}
+        href={ `https://wa.me/${WHATSAPP_NUMBER}` }
         target="_blank"
         rel="noopener noreferrer"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-        whileHover={{ scale: 1.02 }}
-        whileTap={{ scale: 0.98 }}
+        initial={ { opacity: 0, y: 20 } }
+        whileInView={ { opacity: 1, y: 0 } }
+        viewport={ { once: true } }
+        transition={ { duration: 0.5, ease: [0.16, 1, 0.3, 1], delay: 0.2 } }
+        whileHover={ { scale: 1.02 } }
+        whileTap={ { scale: 0.98 } }
         className="flex items-center justify-center gap-3 rounded-2xl px-6 py-4 font-semibold text-sm
                    bg-[#25D366] hover:bg-[#20bd5a] text-white transition-colors duration-200 shadow-lg shadow-[#25D366]/25"
       >
         <WhatsAppIcon />
-        {t('whatsapp')}
+        { t('whatsapp') }
       </motion.a>
     </div>
   );
