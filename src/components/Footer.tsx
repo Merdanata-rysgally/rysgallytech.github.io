@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/navigation';
 import { Logo } from './Logo';
 
 const FacebookIcon = () => (
@@ -49,8 +50,8 @@ export const Footer: React.FC = () => {
   const copyright = safeT('copyright', 'All rights reserved.');
 
   const navItems = [
-    { label: linkLabel('links.main', 'Main'), href: '#' },
-    { label: linkLabel('links.contact', 'Contact'), href: '#' },
+    { label: linkLabel('links.main', 'Main'), href: '/' },
+    { label: linkLabel('links.contact', 'Contact'), href: '/contact' },
   ];
 
   const socials = [
@@ -70,13 +71,13 @@ export const Footer: React.FC = () => {
 
           <nav className="flex flex-wrap items-center gap-4 text-sm font-medium">
             { navItems.map((item, i) => (
-              <a
+              <Link
                 key={ i }
                 href={ item.href }
                 className="px-3 py-1 rounded-full border border-transparent hover:border-foreground/15 hover:bg-foreground/5 transition-colors duration-150"
               >
                 { item.label }
-              </a>
+              </Link>
             )) }
           </nav>
         </div>

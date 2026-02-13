@@ -47,10 +47,6 @@ export const Navbar: React.FC = () => {
     return () => document.removeEventListener('mousedown', onClickOutside);
   }, []);
 
-  const DEFAULT_LOCALE = 'en';
-
-  // useLocale() gives the true current locale (even when URL has no prefix)
-  const base = locale === DEFAULT_LOCALE ? '/' : `/${locale}`;
   const currentLocale = LOCALES.find((l) => l.code === locale) ?? LOCALES[0];
 
   const switchLocale = (code: string) => {
@@ -59,8 +55,8 @@ export const Navbar: React.FC = () => {
   };
 
   const links = [
-    { label: t('main'), href: base },
-    { label: t('contact'), href: `${base}/contact` },
+    { label: t('main'), href: '/' },
+    { label: t('contact'), href: '/contact' },
   ];
 
   return (
@@ -81,7 +77,7 @@ export const Navbar: React.FC = () => {
       <div className="max-w-screen-2xl mx-auto px-6 md:px-8 h-16 flex items-center justify-between">
 
         {/* Logo */}
-        <Link href={base} className="group">
+        <Link href="/" className="group">
           <Logo theme="light" />
         </Link>
 
@@ -89,7 +85,7 @@ export const Navbar: React.FC = () => {
         <div className="hidden md:flex items-center gap-1">
           <nav className="flex items-center gap-1">
             {links.map((link) => {
-              const isActive = pathname === link.href || (link.href !== base && pathname.startsWith(link.href));
+              const isActive = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href));
               return (
                 <Link
                   key={link.href}
@@ -234,7 +230,7 @@ export const Navbar: React.FC = () => {
           >
             <div className="flex flex-col px-6 py-4 gap-1">
               {links.map((link) => {
-                const isActive = pathname === link.href || (link.href !== base && pathname.startsWith(link.href));
+                const isActive = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href));
                 return (
                   <Link
                     key={link.href}

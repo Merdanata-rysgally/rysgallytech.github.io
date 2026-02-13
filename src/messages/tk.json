@@ -77,6 +77,7 @@
       "productionAddressValue": "Ahal welaýaty, Ak Bugdaý etraby, Senagat zolagy, Zümmeret köçesi, 28-nji jaý",
       "website": "Web sahypa",
       "websiteValue": "rysgallytech.com",
+      "email": "E-poçta",
       "hours": "Iş sagatlary",
       "hoursValue": "Duş – Anna, 09:00 – 18:00"
     },
@@ -122,10 +123,10 @@
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Technology-iň hyzmat bölümi senagat desgalary, täjirçilik binalary we infrastruktura üçin gije-gündiz öňüni alyş we bejeriş hyzmatlaryny hödürleýär.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Kepillendirilen jogap wagty bolan ýyllyk gözegçilikden başlap doly örtük şertnamalaryna çenli dürli hyzmat derejesindäki ylalaşyklary hödürleýäris.\n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris. Sanly aktiwlere gözegçilik we çaklaýjy analitika näsazlyklaryň öňüni almaga kömek edýär."
     },
     "auto": {
-      "title": "Awtomobil Ätiýaçlyk Şaýlary",
-      "shortTitle": "Awto Bölek",
-      "description": "Ýokary hilli awtomobil bölekleri we aksessuarlar",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Technology ýeňil awtoulaglar, ýeňil täjirçilik furgonetkalary we agyr ýük awtoulaglary üçin asyl we OEM-analog ätiýaçlyk şaýlarynyň giň toplumyny üpjün edýär.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Logistika ulgamymyz sebitiň çägindäki ussahanalara we awtoparka eýelerine ertesi gün eltip bermegi üpjün edýär.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Hünärmenlerimizden tehniki goldaw dogry bölegiň çalt tapylmagyna kömek edip, ulaglaryň iş wagtyny azaldýar."
+      "title": "Awtomobil Satýyşy",
+      "shortTitle": "Awto Satýyş",
+      "description": "Hususy we korporatiw müşderiler üçin täze we ulanylan awtomobilleri satmak",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Technology sebitdäki hususy alyjylar we korporatiw awtoparklar üçin täze we ulanylan ýeňil awtoulaglaryň, ýeňil täjirçilik furgonetkalarynyň we agyr ýük awtoulaglarynyň saýlama toplumyny hödürleýän awtomobil satuw merkezini dolandyrýar.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Satuw hünärmenlerimiz müşderä satyn alyş prosesiniň ähli tapgyrlarynda — awtomobil saýlamakdan we maliýeleşdiriş opsiýalaryndan başlap trade-in bahalandyrmasyna we hasaba goýmak goldawyna çenli — aç-açan we rahat tejribäni üpjün edýär.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Korporatiw müşderilere ýöriteleşdirilen hasap dolandyryjylary, köpçülikleýin satyn almalarda ýörite nyrh we satuwdan soňky hyzmat paketleri elýeterlidir."
     },
     "retail": {
       "title": "Elektron Söwda Meýdançasy",

@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import { MapPin, Building2, Globe, Clock } from 'lucide-react';
+import { MapPin, Building2, Globe, Clock, Mail } from 'lucide-react';
 
 const WhatsAppIcon = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -47,6 +47,11 @@ export const ContactInfoPanel: React.FC = () => {
       label: t('info.hours'),
       value: t('info.hoursValue'),
     },
+  ];
+
+  const emails = [
+    'sales@rysgallytech.com',
+    'info@rysgallytech.com',
   ];
 
   return (
@@ -93,6 +98,33 @@ export const ContactInfoPanel: React.FC = () => {
               </div>
             </motion.li>
           )) }
+          {/* Email row */}
+          <motion.li
+            custom={items.length}
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="flex items-start gap-4"
+          >
+            <div className="mt-0.5 w-9 h-9 rounded-xl bg-[#3fbad2]/10 border border-[#3fbad2]/20 flex items-center justify-center flex-shrink-0">
+              <Mail size={16} className="text-[#3fbad2]" />
+            </div>
+            <div className="flex flex-col gap-1">
+              <span className="text-[11px] uppercase tracking-wider text-gray-400 font-medium">
+                {t('info.email')}
+              </span>
+              {emails.map((email) => (
+                <a
+                  key={email}
+                  href={`mailto:${email}`}
+                  className="text-sm text-[#3fbad2] leading-snug font-medium hover:underline"
+                >
+                  {email}
+                </a>
+              ))}
+            </div>
+          </motion.li>
         </ul>
       </motion.div>
 

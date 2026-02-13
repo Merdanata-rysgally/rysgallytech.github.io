@@ -77,6 +77,7 @@
       "productionAddressValue": "Ahal region, Ak Bugday district, Industrial zone, Zummeret Street, 28",
       "website": "Website",
       "websiteValue": "rysgallytech.com",
+      "email": "Email",
       "hours": "Working Hours",
       "hoursValue": "Mon – Fri, 09:00 – 18:00"
     },
@@ -122,10 +123,10 @@
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Technology's service division provides round-the-clock preventive and corrective maintenance for industrial plant, commercial facilities, and infrastructure assets. Our certified technicians are on call 24 hours a day, 365 days a year, ensuring critical systems stay operational.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. We offer structured service-level agreements tailored to client criticality requirements, from basic annual inspections to comprehensive full-coverage contracts with guaranteed response times. Digital asset tracking and predictive maintenance analytics help pre-empt failures before they occur.\n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Our spare-parts warehouse ensures fast turnaround for common failure components, and our partnerships with major OEM brands give clients access to genuine parts at competitive prices."
     },
     "auto": {
-      "title": "Auto Parts & Supplies",
-      "shortTitle": "Auto Parts",
-      "description": "Quality automotive parts and accessories",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Technology sources and distributes a comprehensive range of genuine and OEM-equivalent automotive parts for passenger vehicles, light commercial vans, and heavy-duty trucks. Our catalogue covers engine components, drivetrain assemblies, electrical systems, and body parts.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Our logistics network enables next-day delivery to workshops and fleet operators throughout the region. We partner with internationally recognised brands to guarantee authenticity and warranty coverage on every part supplied.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Technical support from our parts specialists helps procurement managers and mechanics identify the correct component quickly, reducing vehicle downtime and keeping fleets moving."
+      "title": "Automobile Sales",
+      "shortTitle": "Auto Sales",
+      "description": "New and used vehicle sales for individuals and fleets",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Technology operates an automobile dealership offering a curated selection of new and pre-owned passenger vehicles, light commercial vans, and heavy-duty trucks to individual buyers and corporate fleet managers across the region.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Our showroom specialists guide customers through the full purchase journey — from vehicle selection and financing options to trade-in valuations and registration support — ensuring a transparent and stress-free buying experience.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Fleet procurement teams benefit from dedicated account managers, volume pricing, and after-sale support packages that keep their vehicles on the road and their operations running efficiently."
     },
     "retail": {
       "title": "E-Commerce Platform",
