@@ -12,7 +12,7 @@
       "trading": "SÖWDA",
       "solutions": "ÇÖZGÜTLERI"
     },
-    "subtitle": "Inženerçilik • Önümçilik • Söwda — Ýeke hyzmatdaş, Müşderi üçin ählisi bir ýerde!",
+    "subtitle": "Gurluşyk • Inženerçilik ulgamlary • Üpjünçilik • Oba hojalygy",
     "cta": {
       "primary": "Başlamak",
       "secondary": "Hyzmatlarymyz"
@@ -20,25 +20,22 @@
     "scroll": "Öwrenmek üçin aşak aýlaň"
   },
   "stats": {
-    "years": "Ýyllyk Tejribe",
-    "industries": "Hyzmat Pudaklary",
-    "retention": "Müşderi Saklaýyş"
+    "years": "Işewürlik taryhynyň başlangyjy",
+    "industries": "Iş ugurlary",
+    "retention": "Saýtyň dilleri"
   },
   "intro": {
-    "body": "Rysgally Technology — gurluşyk, suw arassalaýyş, mebel önümçiligi, haýwan iýmiti öndürmek, tehnika kärendesi, tehniki hyzmat, awtomobil bölekleri we elektron söwdany öz içine alýan korporasiýa bolup, hyzmatlaryn giň toplumyny hödürleýär.",
+    "body": "«Rysgally Tehnologiýa» Türkmenistanyň köp ugurly kompaniýasydyr. Işewürlik taryhymyz 1994-nji ýyldan başlanýar. Esasy iş ugurlarymyz gurluşyk, inženerçilik ulgamlary, enjamlar we materiallar bilen üpjünçilik, oba hojalygy we pagtaçylyk bolup durýar. Her taslamanyň we üpjünçiligiň şertleri buýrujy bilen ylalaşylýar.",
     "keywords": [
       "gurluşyk",
-      "suw arassalaýyş",
-      "mebel önümçiligi",
-      "haýwan iýmiti öndürmek",
-      "tehnika kärendesi",
-      "tehniki hyzmat",
-      "awtomobil bölekleri",
-      "elektron söwdany"
+      "inženerçilik ulgamlary",
+      "enjamlar we materiallar bilen üpjünçilik",
+      "oba hojalygy",
+      "pagtaçylyk"
     ]
   },
   "footer": {
-    "tagline": "Inženerçilik • Önümçilik • Söwda",
+    "tagline": "Gurluşyk • Inženerçilik ulgamlary • Üpjünçilik • Oba hojalygy",
     "copyright": "Ähli hukuklar goralýar.",
     "links": {
       "main": "Baş sahypa",
@@ -51,7 +48,7 @@
   "contact": {
     "badge": "Habarlaşmak",
     "heading": "Bilelikde guraly",
-    "subheading": "Toparymyz bilen habarlaşyň — bir iş güni içinde jogap berýäris.",
+    "subheading": "Taslamaňyzy, tehniki talaplaryňyzy ýa-da hyzmatdaşlygyň şertlerini ara alyp maslahatlaşmak üçin biziň bilen habarlaşyň.",
     "form": {
       "name": "Doly adyňyz",
       "namePlaceholder": "Myrat Myradow",
@@ -63,10 +60,11 @@
       "subjectPlaceholder": "Nähili kömek edip bileris?",
       "message": "Habar",
       "messagePlaceholder": "Taslamaňyz ýa-da sorawyňyz barada gürrüň beriň…",
-      "submit": "Habar iberiň",
-      "sending": "Iberilýär…",
-      "success": "Habar iberildi! Ýakyn wagtda habarlaşarys.",
-      "error": "Bir zat ters gitdi. Gaýtadan synanyşyň."
+      "submit": "E-poçta hatyny açmak",
+      "sending": "Hat açylýar…",
+      "success": "E-poçta programmaňyz açylan bolsa, haty barlaň we özüňiz iberiň.",
+      "error": "E-poçta programmasyny açyp bolmady. Görkezilen salgy boýunça bize ýazyň.",
+      "note": "Bu görnüş e-poçta programmaňyzda hatyň taslamasyny taýýarlaýar. Habar awtomatik usulda iberilmeýär."
     },
     "whatsapp": "WhatsApp-da ýaz",
     "info": {
@@ -87,52 +85,52 @@
   },
   "industries": {
     "epc": {
-      "title": "Gurluşyk we EPC Taslamalary",
-      "shortTitle": "Gurluşyk & EPC",
-      "description": "Doly gurluşyk we inženerçilik taslamalary",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Technology doly EPC çözgütlerini hödürleýär — tehniki-ykdysady esaslandyrmalardan başlap jikme-jik taslamalaşdyrmaga, satyn almaga, gurluşyga we işe girizilmegine çenli.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Köp ugurly toparlarymyz sebitde çylşyrymly senagat desgalaryny, täjirçilik binalaryny we infrastruktura taslamalaryny dolandyrýar.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Berk hil gözegçiligi we aç-açan hasabatlylyk taslamalaryň bellenen býujet we möhletlerde ýerine ýetirilmegini üpjün edýär."
+      "title": "Gurluşyk we abatlaýyş",
+      "shortTitle": "Gurluşyk",
+      "description": "Gurluşyk, abatlaýyş we abadanlaşdyryş işleri",
+      "body": "Gurluşyk-gurnama, durkuny täzelemek, abatlaýyş we abadanlaşdyryş işlerini ýerine ýetirýäris. Işleriň möçberi tehniki tabşyrykda we şertnamada kesgitlenýär.\n\nInženerçilik goldawyny, smeta taýýarlygyny, üpjünçiligi we işleriň ýerine ýetirilişine gözegçiligi guraýarys. Resminamalaryň düzümi we işleri kabul etmegiň tertibi buýrujy bilen ylalaşylýar."
     },
     "water": {
-      "title": "Suw Arassalaýyş we Filtrleme",
-      "shortTitle": "Suw Filtrleme",
-      "description": "Suw filtrleri we arassalaýyş ulgamlaryny öndürmek",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Technology şäher, senagat we oba hojalyk müşderileri üçin ösen suw filtrleme we arassalaýyş ulgamlaryny taslaýar hem-de öndürýär.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Her ulgam müşderä gowşurylmazdan ozal halkara suw hili standartlaryna laýyklykda berk synagdan geçirilýär.\n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris. Inženerler toparymyz energiýa sarp edişini we işletme çykdajylaryny azaltmak üçin täzelikçi çözgütler işläp taýýarlaýar."
+      "title": "Suw üpjünçiligi we süzgüç ulgamlary",
+      "shortTitle": "Suw ulgamlary",
+      "description": "Suw üpjünçiligi we süzgüç ulgamlaryny saýlamak, gurnamak we hyzmat etmek",
+      "body": "Desganyň maksadyna we buýrujynyň beren maglumatlaryna laýyklykda suw üpjünçiligi we süzgüç ulgamlary üçin enjamlary hem-de materiallary saýlaýarys.\n\nGurnama we tehniki hyzmat işlerini ýerine ýetirýäris. Enjamlaryň düzümi, zerur barlaglar we hyzmat şertleri her taslama üçin aýratyn kesgitlenýär."
     },
     "furniture": {
-      "title": "Mebel Önümçiligi",
-      "shortTitle": "Mebel",
-      "description": "Ýokary hilli mebel önümçiligi we dizaýny",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Technology-iň mebel bölümi ekologiki taýdan arassa materiallardan öndürilen premium derejeli ofis, täjirçilik we ýaşaýyş mebel önümlerini çykarýar.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Korporatiw müşderiler we gurluşykçylar üçin ýörite dizaýn hyzmatlaryny hödürleýäris — ölçeglerden başlap örtge we deri bezegine çenli.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Eskizden ak ellikli eltip bermä we gurnamaga çenli Rysgally Technology mebeliň doly ýaşaýyş döwrüni öz üstüne alýar."
+      "title": "Içki bezeg we otaglary enjamlaşdyrmak",
+      "shortTitle": "Içki bezeg",
+      "description": "Otaglary abatlamak, bezemek we üpjün etmek",
+      "body": "Otaglarda abatlaýyş we bezeg işlerini ýerine ýetirýäris, materiallary saýlaýarys hem-de taslama laýyklykda üpjünçiligi guraýarys.\n\nIşleriň düzümi, bezeg görnüşi, materiallara bildirilýän talaplar we eltip bermegiň tertibi sargyt ýerine ýetirilmezden öň ylalaşylýar."
     },
     "feed": {
-      "title": "Haýwan iýmiti Öndürmek",
-      "shortTitle": "Haýwan iýmiti",
-      "description": "Premium mal we guş iýmitini öndürmek",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Technology iýmit deňagramlylygy saklanylýan mal, goýun, guş we suw önümleri üçin kombinlenen iýme öndürýän döwrebap zawody dolandyrýar.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Her partiýa ugradylmazdan ozal öz laboratoriýamyzda çyglylyk, belok derejesi we mikrobiologiki howpsuzlyk barlagyndan geçirilýär.\n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris. Dökme eltmekden 25 kg haltalar bilen palet görnüşine çenli çeýe gaplaýyş opsiýalary islendik ululyktaky fermalara netijeli logistikany üpjün edýär."
+      "title": "Oba hojalygy we pagtaçylyk",
+      "shortTitle": "Pagta we oba hojalygy",
+      "description": "Pagta ösdürip ýetişdirmek, çig maly gaýtadan işlemek we üpjünçiligi guramak",
+      "body": "Uzak möhletli peýdalanmaga berlen ýerde pagta ösdürip ýetişdirýäris. Öz hasylymyz we beýleki üpjün edijileriň çig maly bilen işleýäris.\n\nBeýleki üpjün edijileriň çig malyny gaýtadan işlemek we pagta önümlerini ibermek zerur resminamalar resmileşdirilip, şertnama esasynda guralýar. Hil, möçber, möhlet, baha we ibermegiň şertleri her tapgyr üçin aýratyn ylalaşylýar."
     },
     "equipment": {
-      "title": "Oba Hojalyk Tehnikasyny Kärende Bermek",
-      "shortTitle": "Tehnika Kärendesi",
-      "description": "Oba hojalygy üçin elektrotehniki ulaglar we maşynlar",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Technology gysga we uzak möhletli kärende üçin elýeterli döwrebap oba hojalyk we elektrotehniki enjamlar parkyny saklaýar.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Kärende döwürleriniň arasynda ähli tehnikalar öndürijiniň talaplary boýunça hyzmat edilýär, bu bolsa meýdanda iş kesilmesini azaldýar.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Kärende programmasy agrobiznesler üçin ýokary möwsüm döwürlerinde capital çykdajysyz işleýiş kuwwatyny giňeltmäge mümkinçilik berýär."
+      "title": "Taslamalaryň tehniki üpjünçiligi",
+      "shortTitle": "Taslama goldawy",
+      "description": "Işleri ýerine ýetirmek üçin tehniki çözgütleri we enjamlary saýlamak",
+      "body": "Wezipeleri, ulanyş şertlerini we iş tertibini göz öňünde tutup, gurluşyk hem-de oba hojalyk taslamalarynyň tehniki üpjünçiligini guraýarys.\n\nEnjamlara bolan zerurlyk, üpjün etmegiň usuly we hyzmat şertleri her taslama üçin aýratyn kesgitlenýär."
     },
     "service": {
-      "title": "24/7 Tehniki Hyzmat",
-      "shortTitle": "Hyzmat 24/7",
-      "description": "Hemişelik tehniki goldaw we hyzmat",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Technology-iň hyzmat bölümi senagat desgalary, täjirçilik binalary we infrastruktura üçin gije-gündiz öňüni alyş we bejeriş hyzmatlaryny hödürleýär.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Kepillendirilen jogap wagty bolan ýyllyk gözegçilikden başlap doly örtük şertnamalaryna çenli dürli hyzmat derejesindäki ylalaşyklary hödürleýäris.\n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris. Sanly aktiwlere gözegçilik we çaklaýjy analitika näsazlyklaryň öňüni almaga kömek edýär."
+      "title": "Inženerçilik ulgamlaryna hyzmat",
+      "shortTitle": "Tehniki hyzmat",
+      "description": "Enjamlary barlamak, abatlamak we tehniki hyzmat etmek",
+      "body": "Inženerçilik ulgamlaryny we enjamlary barlaýarys, abatlaýarys hem-de olara tehniki hyzmat edýäris. Iş meýilnamasy gözden geçirmegiň netijeleri we buýrujynyň talaplary esasynda taýýarlanýar.\n\nHyzmatyň döwürleýinligi, ätiýaçlyk şaýlarynyň sanawy we ýerine ýetiriş möhletleri şertnamada kesgitlenýär."
     },
     "auto": {
-      "title": "Awtomobil Satýyşy",
-      "shortTitle": "Awto Satýyş",
-      "description": "Hususy we korporatiw müşderiler üçin täze we ulanylan awtomobilleri satmak",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Technology sebitdäki hususy alyjylar we korporatiw awtoparklar üçin täze we ulanylan ýeňil awtoulaglaryň, ýeňil täjirçilik furgonetkalarynyň we agyr ýük awtoulaglarynyň saýlama toplumyny hödürleýän awtomobil satuw merkezini dolandyrýar.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Satuw hünärmenlerimiz müşderä satyn alyş prosesiniň ähli tapgyrlarynda — awtomobil saýlamakdan we maliýeleşdiriş opsiýalaryndan başlap trade-in bahalandyrmasyna we hasaba goýmak goldawyna çenli — aç-açan we rahat tejribäni üpjün edýär.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Korporatiw müşderilere ýöriteleşdirilen hasap dolandyryjylary, köpçülikleýin satyn almalarda ýörite nyrh we satuwdan soňky hyzmat paketleri elýeterlidir."
+      "title": "Enjamlar we ätiýaçlyk şaýlary",
+      "shortTitle": "Ätiýaçlyk şaýlary",
+      "description": "Enjamlary, bölekleri we düzüm şaýlaryny saýlamak we satyn almak",
+      "body": "Buýrujynyň tehniki talaplaryna laýyklykda enjamlary, ätiýaçlyk şaýlaryny we düzüm böleklerini saýlamagy hem-de satyn almagy guraýarys.\n\nSargyt ýerleşdirilmezden öň laýyklyk, gelip çykyş, toplumy we ibermegiň şertleri barlanýar hem-de ylalaşylýar."
     },
     "retail": {
-      "title": "Elektron Söwda Meýdançasy",
-      "shortTitle": "Onlaýn Bazar",
-      "description": "Senagat önümleri üçin sanly söwda meýdançasy",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Technology sebitdäki senagat üpjünçilerini alyjylar bilen birleşdirýän B2B we B2C elektron söwda platformasyny dolandyrýar.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Platforma korporatiw satyn alyş toparlarynda giňden ulanylýan ERP ulgamlary bilen integrasiýa edilýär: awtomatlaşdyrylan sargytlar, hakyky wagtda ätiýaçlyk görünüşi we birleşdirilen hasap-faktura.\n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris. Ýöriteleşdirilen ýerine ýetiriş merkezi takyk toplamak, gaplaýmak we wagtynda iberilmegini üpjün edýär."
+      "title": "Materiallar we üpjünçilik",
+      "shortTitle": "Üpjünçilik",
+      "description": "Taslamalar we kärhanalar üçin materiallar hem-de harytlar",
+      "body": "Taslamalary gurluşyk materiallary, sarp edilýän materiallar we senagat harytlary bilen üpjün etmäge ýardam berýäris. Buýrujynyň tehniki sanawy boýunça ýüz tutmalara seredýäris.\n\nHarydyň barlygy, mukdary, bahasy we iberiş möhletleri täjirçilik teklibinde we şertnamada tassyklanýar."
     }
   }
 }

@@ -39,9 +39,9 @@ export const StatsSection: React.FC = () => {
   const t = useTranslations('stats');
 
   const stats = [
-    { value: 32, suffix: '+', label: t('years') },
+    { value: 1994, suffix: '', label: t('years') },
     { value: 8, suffix: '', label: t('industries') },
-    { value: 98, suffix: '%', label: t('retention') },
+    { value: 3, suffix: '', label: t('retention') },
   ];
 
   return (

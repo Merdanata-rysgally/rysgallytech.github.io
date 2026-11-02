@@ -55,6 +55,9 @@ export const IndustryModal: React.FC<IndustryModalProps> = ({ industry, onClose 
           {/* Sheet — full width, leaves ~56px gap at top for close affordance */}
           <motion.div
             key="modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="industry-title"
             ref={scrollRef}
             className="fixed left-0 right-0 bottom-0 z-[101] bg-white overflow-y-auto shadow-2xl"
             style={{ top: '56px', borderRadius: '20px 20px 0 0' }}
@@ -97,7 +100,7 @@ export const IndustryModal: React.FC<IndustryModalProps> = ({ industry, onClose 
               </div>
 
               {/* Title */}
-              <h2 className="text-3xl md:text-4xl font-black tracking-tight text-gray-900 leading-tight mb-3">
+              <h2 id="industry-title" className="text-3xl md:text-4xl font-black tracking-tight text-gray-900 leading-tight mb-3">
                 {t(`${industry.id}.title`)}
               </h2>
 

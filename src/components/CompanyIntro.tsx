@@ -34,9 +34,9 @@ export const CompanyIntro: React.FC = () => {
   const tStats = useTranslations('stats');
 
   const stats = [
-    { value: 32, suffix: '+', label: tStats('years') },
+    { value: 1994, suffix: '', label: tStats('years') },
     { value: 8, suffix: '', label: tStats('industries') },
-    { value: 98, suffix: '%', label: tStats('retention') },
+    { value: 3, suffix: '', label: tStats('retention') },
   ];
 
   // The intro sentence with highlighted keywords

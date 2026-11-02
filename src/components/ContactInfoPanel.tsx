@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import { MapPin, Building2, Globe, Clock, Mail } from 'lucide-react';
+import { MapPin, Building2, Globe, Clock, Mail, Phone } from 'lucide-react';
 
 const WhatsAppIcon = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -26,6 +26,7 @@ export const ContactInfoPanel: React.FC = () => {
   const t = useTranslations('contact');
 
   const items = [
+    { icon: Phone, label: t('form.phone'), value: '+993 65 19 44 55', href: 'tel:+99365194455' },
     {
       icon: MapPin,
       label: t('info.legalAddress'),
@@ -50,7 +51,7 @@ export const ContactInfoPanel: React.FC = () => {
   ];
 
   const emails = [
-    'sales@rysgallytech.com',
+    'merdanata711@gmail.com',
     'info@rysgallytech.com',
   ];
 

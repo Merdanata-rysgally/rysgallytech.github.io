@@ -12,7 +12,7 @@
       "trading": "TRADING",
       "solutions": "SOLUTIONS"
     },
-    "subtitle": "Engineering • Manufacturing • Trade — One partner, everything for the client in one place!",
+    "subtitle": "Construction • Engineering systems • Procurement • Agriculture",
     "cta": {
       "primary": "Get Started",
       "secondary": "Our Services"
@@ -20,25 +20,22 @@
     "scroll": "Scroll to explore"
   },
   "stats": {
-    "years": "Years of Experience",
-    "industries": "Industries Served",
-    "retention": "Client Retention"
+    "years": "Business history since",
+    "industries": "Areas of work",
+    "retention": "Website languages"
   },
   "intro": {
-    "body": "Rysgally Technology is a corporation, encompassing construction, water filtration, furniture manufacturing, animal feed production, equipment rental, maintenance services, auto parts, and e-commerce, collectively working together to deliver a comprehensive range of services.",
+    "body": "Rysgally Tehnologiýa is a diversified company based in Turkmenistan. Our business history dates back to 1994. Our main areas of work are construction, engineering systems, equipment and materials supply, agriculture and cotton. The scope and terms of each project or supply are agreed with the customer.",
     "keywords": [
       "construction",
-      "water filtration",
-      "furniture manufacturing",
-      "animal feed production",
-      "equipment rental",
-      "maintenance services",
-      "auto parts",
-      "e-commerce"
+      "engineering systems",
+      "equipment and materials supply",
+      "agriculture",
+      "cotton"
     ]
   },
   "footer": {
-    "tagline": "Engineering • Manufacturing • Trade",
+    "tagline": "Construction • Engineering systems • Procurement • Agriculture",
     "copyright": "All rights reserved.",
     "links": {
       "main": "Main",
@@ -51,7 +48,7 @@
   "contact": {
     "badge": "Get in Touch",
     "heading": "Let's Build Together",
-    "subheading": "Reach out to our team — we respond within one business day.",
+    "subheading": "Contact us to discuss your project, specifications or cooperation requirements.",
     "form": {
       "name": "Full Name",
       "namePlaceholder": "John Smith",
@@ -63,10 +60,11 @@
       "subjectPlaceholder": "How can we help?",
       "message": "Message",
       "messagePlaceholder": "Tell us about your project or inquiry…",
-      "submit": "Send Message",
-      "sending": "Sending…",
-      "success": "Message sent! We'll be in touch soon.",
-      "error": "Something went wrong. Please try again."
+      "submit": "Open email",
+      "sending": "Opening email…",
+      "success": "If your email app opened, review the draft and send it yourself.",
+      "error": "The email app could not be opened. Please contact us at the address shown.",
+      "note": "This form prepares a draft in your email app. It does not send a message automatically."
     },
     "whatsapp": "Chat on WhatsApp",
     "info": {
@@ -87,52 +85,52 @@
   },
   "industries": {
     "epc": {
-      "title": "Construction & EPC Projects",
-      "shortTitle": "Construction & EPC",
-      "description": "Complete turnkey construction and engineering projects",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Technology delivers end-to-end EPC solutions — from feasibility studies and detailed engineering to procurement, construction, and commissioning. Our multidisciplinary teams manage complex industrial facilities, commercial buildings, and infrastructure projects across the region.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. We integrate civil, mechanical, electrical, and instrumentation disciplines under one roof, ensuring seamless project execution within budget and schedule. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Our project management office employs industry-leading methodologies, rigorous quality control, and transparent reporting to keep clients informed at every milestone."
+      "title": "Construction and Renovation",
+      "shortTitle": "Construction",
+      "description": "Construction, refurbishment and landscaping works",
+      "body": "We carry out construction and installation, reconstruction, renovation and landscaping works. The scope is defined by the technical specification and contract.\n\nWe coordinate engineering support, cost estimates, procurement and progress control. Documentation and acceptance procedures are agreed with the customer."
     },
     "water": {
-      "title": "Water Treatment & Filtration",
-      "shortTitle": "Water Filtration",
-      "description": "Manufacturing water filters and treatment systems",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Technology designs and manufactures advanced water filtration and treatment systems for municipal, industrial, and agricultural clients. Our product line spans reverse osmosis units, multi-stage filtration assemblies, and bespoke treatment plants.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Every system undergoes rigorous testing against international water quality standards before delivery. We provide full installation supervision, operator training, and long-term maintenance agreements to ensure uninterrupted access to clean water.\n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Our engineering team continuously innovates to reduce energy consumption and operating costs, helping clients achieve sustainability targets while maintaining peak performance."
+      "title": "Water Supply and Filtration",
+      "shortTitle": "Water Systems",
+      "description": "Selection, installation and maintenance of water supply and filtration systems",
+      "body": "We select equipment and materials for water supply and filtration based on the purpose of the facility and the data supplied by the customer.\n\nWe carry out installation and servicing. The equipment scope, required checks and maintenance terms are defined for each project."
     },
     "furniture": {
-      "title": "Furniture Manufacturing",
-      "shortTitle": "Furniture",
-      "description": "High-quality furniture production and design",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Technology's furniture division produces premium-grade office, commercial, and residential furniture built to last. Using sustainably sourced timber and high-durability materials, our craftsmen combine traditional joinery techniques with modern CNC precision.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. We offer bespoke design services, enabling corporate clients and developers to specify every dimension, finish, and upholstery detail. Our factory capacity supports both small custom runs and large-scale commercial orders with consistent quality.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. From concept sketches to white-glove delivery and installation, Rysgally Technology manages the entire furniture lifecycle — reducing procurement complexity for our clients."
+      "title": "Interior Renovation and Fit-out",
+      "shortTitle": "Interior Fit-out",
+      "description": "Renovation, finishes and interior procurement",
+      "body": "We carry out interior renovation and finishing work, select materials and coordinate fit-out procurement in accordance with the project.\n\nThe scope of work, finishes, material requirements and delivery arrangements are agreed before the order is carried out."
     },
     "feed": {
-      "title": "Animal Feed Production",
-      "shortTitle": "Animal Feed",
-      "description": "Premium livestock and poultry feed manufacturing",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Technology operates a state-of-the-art animal feed production facility formulating nutritionally balanced compound feeds for cattle, sheep, poultry, and aquaculture. Our nutritionists collaborate with veterinary specialists to develop recipes that maximise growth rates and herd health.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Each batch is tested in our on-site laboratory for moisture content, protein levels, and microbiological safety before dispatch. We hold internationally recognised quality certifications and comply with all regional livestock feed regulations.\n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Flexible packaging options — from bulk tanker deliveries to palletised 25 kg bags — ensure efficient logistics for farms of every scale across the region."
+      "title": "Agriculture and Cotton",
+      "shortTitle": "Cotton and Agriculture",
+      "description": "Cotton cultivation, raw material processing and supply coordination",
+      "body": "We grow cotton on land held under long-term use rights. We work with our own harvest and raw materials from other suppliers.\n\nProcessing of third-party raw materials and cotton product supplies are arranged under contracts with the necessary documentation. Quality, quantities, schedules, prices and delivery terms are agreed for each batch."
     },
     "equipment": {
-      "title": "Agricultural Equipment Rental",
-      "shortTitle": "Equipment Rental",
-      "description": "Electrotechnical vehicles and machinery for agriculture",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Technology maintains a modern fleet of agricultural and electrotechnical machinery available for short- and long-term rental. Our inventory includes tractors, harvesters, irrigation rigs, electric utility vehicles, and specialised soil-preparation equipment.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. All machines are serviced to manufacturer specifications between hire periods, minimising downtime on-site. Clients benefit from flexible rental terms, optional operator provision, and rapid deployment to farming locations across the country.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Our rental programme allows agribusinesses to scale operational capacity during peak seasons without the capital burden of outright ownership, improving cash flow and overall productivity."
+      "title": "Project Equipment Support",
+      "shortTitle": "Project Support",
+      "description": "Technical solutions and equipment selection for project delivery",
+      "body": "We coordinate technical support for construction and agricultural projects, taking account of the work requirements, operating conditions and schedule.\n\nEquipment needs, supply arrangements and maintenance terms are defined separately for each project."
     },
     "service": {
-      "title": "24/7 Maintenance & Service",
-      "shortTitle": "Service 24/7",
-      "description": "Round-the-clock technical support and maintenance",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Technology's service division provides round-the-clock preventive and corrective maintenance for industrial plant, commercial facilities, and infrastructure assets. Our certified technicians are on call 24 hours a day, 365 days a year, ensuring critical systems stay operational.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. We offer structured service-level agreements tailored to client criticality requirements, from basic annual inspections to comprehensive full-coverage contracts with guaranteed response times. Digital asset tracking and predictive maintenance analytics help pre-empt failures before they occur.\n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Our spare-parts warehouse ensures fast turnaround for common failure components, and our partnerships with major OEM brands give clients access to genuine parts at competitive prices."
+      "title": "Engineering Systems Maintenance",
+      "shortTitle": "Technical Service",
+      "description": "Inspection, repairs and equipment maintenance",
+      "body": "We carry out inspection, repairs and maintenance of engineering systems and equipment. The work plan is based on the site assessment and the customer’s requirements.\n\nService intervals, spare parts and completion times are set out in the contract."
     },
     "auto": {
-      "title": "Automobile Sales",
-      "shortTitle": "Auto Sales",
-      "description": "New and used vehicle sales for individuals and fleets",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Technology operates an automobile dealership offering a curated selection of new and pre-owned passenger vehicles, light commercial vans, and heavy-duty trucks to individual buyers and corporate fleet managers across the region.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Our showroom specialists guide customers through the full purchase journey — from vehicle selection and financing options to trade-in valuations and registration support — ensuring a transparent and stress-free buying experience.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Fleet procurement teams benefit from dedicated account managers, volume pricing, and after-sale support packages that keep their vehicles on the road and their operations running efficiently."
+      "title": "Equipment and Spare Parts",
+      "shortTitle": "Spare Parts",
+      "description": "Selection and procurement of equipment, assemblies and components",
+      "body": "We coordinate the selection and procurement of equipment, spare parts and components against the customer’s technical requirements.\n\nCompatibility, origin, configuration and delivery terms are checked and agreed before an order is placed."
     },
     "retail": {
-      "title": "E-Commerce Platform",
-      "shortTitle": "Online Market",
-      "description": "Digital marketplace for industrial products",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rysgally Technology operates a B2B and B2C e-commerce platform connecting industrial suppliers with buyers across the region. The marketplace features thousands of SKUs spanning construction materials, agricultural inputs, automotive supplies, and maintenance consumables.\n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Our platform integrates with ERP systems commonly used by corporate procurement teams, enabling automated purchase orders, real-time stock visibility, and consolidated invoicing. A dedicated fulfilment centre ensures accurate picking, packing, and timely dispatch.\n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Seller onboarding is straightforward, with our category management team providing listing optimisation and demand-forecasting support to help vendors grow their online revenues efficiently."
+      "title": "Materials and Procurement",
+      "shortTitle": "Procurement",
+      "description": "Materials and goods for projects and businesses",
+      "body": "We help source construction materials, consumables and industrial goods for projects. We review enquiries against the customer’s specifications.\n\nAvailability, quantity, price and delivery schedules are confirmed in the commercial offer and contract."
     }
   }
 }

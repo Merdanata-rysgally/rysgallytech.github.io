@@ -54,12 +54,7 @@ export const Footer: React.FC = () => {
     { label: linkLabel('links.contact', 'Contact'), href: '/contact' },
   ];
 
-  const socials = [
-    { icon: <FacebookIcon />, href: '#', label: 'Facebook' },
-    { icon: <InstagramIcon />, href: '#', label: 'Instagram' },
-    { icon: <YoutubeIcon />, href: '#', label: 'YouTube' },
-    { icon: <LinkedInIcon />, href: '#', label: 'LinkedIn' },
-  ];
+  const socials: { icon: React.ReactNode; href: string; label: string }[] = [];
 
   return (
     <footer className="bg-background text-foreground border-t border-black/5 dark:border-white/10 pt-12 pb-10">

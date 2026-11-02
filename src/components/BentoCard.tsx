@@ -34,6 +34,10 @@ export const BentoCard: React.FC<BentoCardProps> = ({ industry, index, style, on
       initial={ { opacity: 0, scale: 0.96 } }
       animate={ { opacity: 1, scale: isFocused ? 1.02 : 1 } }
       transition={ { delay: index * 0.07, duration: 0.45, ease: [0.25, 0.46, 0.45, 0.94] } }
+      role="button"
+      tabIndex={0}
+      aria-label={t(`${industry.id}.title`)}
+      onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onClick?.(); } }}
       onClick={ onClick }
       onMouseEnter={ () => {
         setIsHovered(true);
