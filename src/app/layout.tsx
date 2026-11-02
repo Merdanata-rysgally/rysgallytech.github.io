@@ -18,7 +18,7 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: 'Rysgally Tehnologiya - Integrated Engineering & Trading Solutions',
-  description: 'Professional EPC, water treatment, furniture manufacturing, and more. One partner for all your engineering and trading needs.',
+  description: 'Construction, engineering services, equipment supply and agriculture in Turkmenistan.',
 };
 
 export default function RootLayout({
@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className="dark">
+    <html lang="en" className="dark">
       <body className={`${inter.variable} ${outfit.variable} font-sans antialiased`}>
         <CursorProvider>
           <MagneticCursor />

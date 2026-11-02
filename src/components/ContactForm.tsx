@@ -5,8 +5,7 @@ import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { Send, CheckCircle, AlertCircle } from 'lucide-react';
 
-// ▶ Replace with your Formspree form ID (from formspree.io/forms)
-const FORMSPREE_ID = 'mkovjpvd';
+// Compose email locally; do not transmit to an unverified third-party form owner.
 
 type Status = 'idle' | 'sending' | 'success' | 'error';
 
@@ -38,35 +37,13 @@ export const ContactForm: React.FC = () => {
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => setFields((prev) => ({ ...prev, [e.target.name]: e.target.value }));
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setStatus('sending');
-    try {
-      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify(fields),
-      });
-      setStatus(res.ok ? 'success' : 'error');
-    } catch {
-      setStatus('error');
-    }
+    const subject = fields.subject || 'Rysgally Tehnologiýa';
+    const body = `${fields.name}\n${fields.email}\n${fields.phone}\n\n${fields.message}`;
+    window.location.href = `mailto:info@rysgallytech.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    setStatus('success');
   };
-
-  if (status === 'success') {
-    return (
-      <motion.div
-        initial={ { opacity: 0, scale: 0.97 } }
-        animate={ { opacity: 1, scale: 1 } }
-        className="flex flex-col items-center justify-center gap-4 py-16 text-center"
-      >
-        <div className="w-14 h-14 rounded-full bg-[#3fbad2]/15 flex items-center justify-center">
-          <CheckCircle className="text-[#3fbad2]" size={ 28 } />
-        </div>
-        <p className="text-gray-900 font-medium text-lg">{ t('success') }</p>
-      </motion.div>
-    );
-  }
 
   const formFields = [
     { key: 0, name: 'name', label: t('name'), placeholder: t('namePlaceholder'), type: 'text', col: 'md:col-span-1' },
@@ -77,6 +54,8 @@ export const ContactForm: React.FC = () => {
 
   return (
     <form onSubmit={ handleSubmit } className="flex flex-col gap-5">
+      <p className="text-sm text-gray-600">{t('note')}</p>
+      {status === 'success' && <p role="status" className="text-sm text-gray-700">{t('success')}</p>}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         { formFields.map((f) => (
           <motion.div
@@ -88,10 +67,12 @@ export const ContactForm: React.FC = () => {
             viewport={ { once: true } }
             className={ `flex flex-col gap-1.5 ${f.col}` }
           >
-            <label className="text-xs font-medium text-gray-500 uppercase tracking-wider">
+            <label htmlFor={f.name} className="text-xs font-medium text-gray-500 uppercase tracking-wider">
               { f.label }
             </label>
             <input
+              id={ f.name }
+              required={f.name === 'name' || f.name === 'email'}
               name={ f.name }
               type={ f.type }
               placeholder={ f.placeholder }
@@ -112,10 +93,12 @@ export const ContactForm: React.FC = () => {
         viewport={ { once: true } }
         className="flex flex-col gap-1.5"
       >
-        <label className="text-xs font-medium text-gray-500 uppercase tracking-wider">
+        <label htmlFor="message" className="text-xs font-medium text-gray-500 uppercase tracking-wider">
           { t('message') }
         </label>
         <textarea
+          id="message"
+          required
           name="message"
           rows={ 5 }
           placeholder={ t('messagePlaceholder') }

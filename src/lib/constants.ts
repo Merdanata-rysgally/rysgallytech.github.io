@@ -28,7 +28,7 @@ export const INDUSTRIES: Industry[] = [
     id: "feed",
     color: "#10b981", // green
     icon: "/svgs/feed.svg",
-    image: "/images/feed.jpg",
+    image: "/svgs/cotton.svg",
   },
   {
     id: "service",

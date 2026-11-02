@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef, useState } from 'react';
-import Link from 'next/link';
+import { Link } from '@/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations, useLocale } from 'next-intl';
 import { useRouter, usePathname } from '@/navigation';
@@ -23,6 +23,8 @@ export const Navbar: React.FC = () => {
   const [langOpen, setLangOpen] = useState(false);
   const langRef = useRef<HTMLDivElement>(null);
 
+  useEffect(() => { document.documentElement.lang = locale; }, [locale]);
+
   // Detect scroll to add subtle bg on scroll
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -34,7 +36,7 @@ export const Navbar: React.FC = () => {
   useEffect(() => {
     setMenuOpen(false);
     setLangOpen(false);
-  }, [pathname]);
+  }, [pathname, locale]);
 
   // Close lang dropdown when clicking outside
   useEffect(() => {
